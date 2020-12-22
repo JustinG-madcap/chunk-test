@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment="For Helix4Git only content"
+    Name="Helix4Git"
+    BackgroundColor="Blue"
+    OriginalName="Helix4Git" />
+  <ConditionTag
+    Comment="For Helix only content"
+    Name="Helix"
+    BackgroundColor="Red"
+    OriginalName="Helix" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Swarm"
+    Comment="For Swarm only content"
+    OriginalName="Swarm" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="P4V"
+    Comment="For P4V only content" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="P4VS"
+    Comment="For P4VS only content" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="HTH"
+    Comment="For HTH only content" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="HTH-UG"
+    Comment="For HTH UG only content" />
+  <ConditionTag
+    Name="HTH-AG"
+    Comment="For HTH Admin Guide only content"
+    BackgroundColor="#ff6600" />
+  <ConditionTag
+    BackgroundColor="#11e8f2"
+    Name="DRAFT"
+    Comment="Likely to need changes or removal - 1st draft" />
+  <ConditionTag
+    BackgroundColor="#ffff33"
+    Name="2019-1"
+    Comment="2019.1 server"
+    OriginalName="2019-1" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="FutureRelease"
+    Comment="For content to be excluded from current builds" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Hide"
+    Comment="Use in snippets shared across manuals when a paragraph (or part of it) is NOT RELEVANT for a particular target" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="SNIPPET-link"
+    Comment="SNIPPET to include this internal link" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="SNIPPET-non-link"
+    Comment="SNIPPET text that substitutes for removed link" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="P4GT-Maya"
+    Comment="For P4GT-Maya only content (to be excluded from other P4GT manuals)"
+    OriginalName="P4GT-Maya" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="SNIPPET-external-link"
+    Comment="Snippet to include this external link"
+    OriginalName="SNIPPET-external-link" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="SNIPPET-show-or-hide-section"
+    Comment="Include snippet condition to show; exclude snippet condition to hide"
+    OriginalName="SNIPPET-hide" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="P4GT-3ds-Max"
+    Comment="For P4GT-3ds-Max only content (to be excluded from other P4GT manuals)"
+    OriginalName="P4GT-3ds-Max" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="P4GT-Photoshop"
+    Comment="For P4GT-Photoshop only content (to be excluded from other P4GT manuals)"
+    OriginalName="P4GT-Photoshop" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="P4GT-3ds-Max-online-only"
+    Comment="For P4GT-3ds-Max online only content (to be excluded from other P4GT manuals)" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="P4GT-Maya-online-only"
+    Comment="For P4GT-Maya-Max only content (to be excluded from other P4GT manuals)" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="P4GT-Photoshop-online-only"
+    Comment="For P4GT-Photoshop only content (to be excluded from other P4GT manuals)" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="2019-2"
+    Comment="" />
+  <ConditionTag
+    Name="HAS"
+    Comment="For HAS UG only content"
+    BackgroundColor="#7fffd4"
+    OriginalName="HAS" />
+</CatapultConditionTagSet>

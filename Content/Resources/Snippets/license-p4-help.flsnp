@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>To get a listing of the third-party software licenses that <MadCap:variable name="Perforce.Helix long" /> uses, at the command line, type the <span class="code">p4 help legal</span> command.</p>
+        <p>To get a listing of the third-party software licenses that the local client (such as P4V) uses, at the command line, type the <span class="code">p4 help -l legal</span> command.</p>
+    </body>
+</html>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+    <Variable Name="Broker short" Comment="" EvaluatedDefinition="Broker short">Broker</Variable>
+    <Variable Name="Broker long" Comment="" EvaluatedDefinition="Broker long">Helix Broker</Variable>
+    <Variable Name="C/C++ API long" Comment="" EvaluatedDefinition="C/C++ API long">Helix C/C++ API</Variable>
+    <Variable Name="C/C++ API short" Comment="" EvaluatedDefinition="C/C++ API short">C/C++ API</Variable>
+    <Variable Name="Commons" Comment="" EvaluatedDefinition="Commons">Commons</Variable>
+    <Variable Name="Company short" Comment="" EvaluatedDefinition="Company short">Perforce</Variable>
+    <Variable Name="Company long" Comment="" EvaluatedDefinition="Perforce Software, Inc.">Perforce Software, Inc.</Variable>
+    <Variable Name="Forums long" Comment="" EvaluatedDefinition="Perforce Forums">Perforce Forums</Variable>
+    <Variable Name="Forums short" Comment="" EvaluatedDefinition="Forums short">Forums</Variable>
+    <Variable Name="GitSwarm CE long" Comment="" EvaluatedDefinition="GitSwarm CE long">Helix GitSwarm CE</Variable>
+    <Variable Name="GitSwarm CE short" Comment="" EvaluatedDefinition="GitSwarm CE short">GitSwarm CE</Variable>
+    <Variable Name="GitSwarm EE long" Comment="" EvaluatedDefinition="GitSwarm EE long">Helix GitSwarm EE</Variable>
+    <Variable Name="GitSwarm EE short" Comment="" EvaluatedDefinition="GitSwarm EE short">GitSwarm EE</Variable>
+    <Variable Name="Helix long" Comment="" EvaluatedDefinition="Helix Core server">Helix Core server</Variable>
+    <Variable Name="Helix short" Comment="" EvaluatedDefinition="Helix server">Helix server</Variable>
+    <Variable Name="HVE long" Comment="" EvaluatedDefinition="Helix Core server">Helix Core server</Variable>
+    <Variable Name="HVE short" Comment="" EvaluatedDefinition="Helix server">Helix server</Variable>
+    <Variable Name="KB long" Comment="" EvaluatedDefinition="Perforce Knowledgebase">Perforce Knowledgebase</Variable>
+    <Variable Name="KB short" Comment="" EvaluatedDefinition="KB short">KB</Variable>
+    <Variable Name="P42DB" Comment="" EvaluatedDefinition="P42DB">P42DB</Variable>
+    <Variable Name="P4Admin" Comment="" EvaluatedDefinition="P4Admin">P4Admin</Variable>
+    <Variable Name="P4API" Comment="" EvaluatedDefinition="P4API">P4API</Variable>
+    <Variable Name="P4API.NET" Comment="" EvaluatedDefinition="P4API.NET">P4API.NET</Variable>
+    <Variable Name="P4Broker" Comment="" EvaluatedDefinition="P4Broker">P4Broker</Variable>
+    <Variable Name="P4Combine" Comment="" EvaluatedDefinition="P4Combine">P4Combine</Variable>
+    <Variable Name="P4Connect" Comment="" EvaluatedDefinition="P4Connect">P4Connect</Variable>
+    <Variable Name="P4D" Comment="" EvaluatedDefinition="P4D">P4D</Variable>
+    <Variable Name="P4DTG long" Comment="" EvaluatedDefinition="Helix Defect Tracking Gateway">Helix Defect Tracking Gateway</Variable>
+    <Variable Name="P4DTG short" Comment="" EvaluatedDefinition="P4DTG short">P4DTG</Variable>
+    <Variable Name="P4Eclipse" Comment="" EvaluatedDefinition="P4Eclipse">P4Eclipse</Variable>
+    <Variable Name="P4FTP" Comment="" EvaluatedDefinition="P4FTP">P4FTP</Variable>
+    <Variable Name="P4GT" Comment="" EvaluatedDefinition="P4GT">P4GT</Variable>
+    <Variable Name="P4Merge" Comment="" EvaluatedDefinition="P4Merge">P4Merge</Variable>
+    <Variable Name="P4ObjC" Comment="" EvaluatedDefinition="P4ObjC">P4ObjC</Variable>
+    <Variable Name="P4P" Comment="" EvaluatedDefinition="P4P">P4P</Variable>
+    <Variable Name="P4Perl" Comment="" EvaluatedDefinition="P4Perl">P4Perl</Variable>
+    <Variable Name="P4PHP" Comment="" EvaluatedDefinition="P4PHP">P4PHP</Variable>
+    <Variable Name="P4Python" Comment="" EvaluatedDefinition="P4Python">P4Python</Variable>
+    <Variable Name="P4Ruby" Comment="" EvaluatedDefinition="P4Ruby">P4Ruby</Variable>
+    <Variable Name="P4Search" Comment="" EvaluatedDefinition="P4Search">P4Search</Variable>
+    <Variable Name="P4V" Comment="" EvaluatedDefinition="P4V">P4V</Variable>
+    <Variable Name="P4VS" Comment="" EvaluatedDefinition="P4VS">P4VS</Variable>
+    <Variable Name="Plugin long" Comment="" EvaluatedDefinition="Plugin long">Perforce Helix Plugin</Variable>
+    <Variable Name="Plugin short" Comment="" EvaluatedDefinition="Plugin short">Plugin</Variable>
+    <Variable Name="Proxy long" Comment="" EvaluatedDefinition="Proxy long">Helix Proxy</Variable>
+    <Variable Name="Proxy short" Comment="" EvaluatedDefinition="Proxy short">Proxy</Variable>
+    <Variable Name="Swarm long" Comment="" EvaluatedDefinition="Swarm long">Helix Swarm</Variable>
+    <Variable Name="Swarm short" Comment="" EvaluatedDefinition="Swarm short">Swarm</Variable>
+    <Variable Name="Manual Title" Comment="cmdref" EvaluatedDefinition="Helix Core P4 Command Reference">Helix Core P4 Command Reference</Variable>
+    <Variable Name="Manual Title" Comment="dvcs" EvaluatedDefinition="Using Helix Core Server for Distributed Versioning">Using Helix Core Server for Distributed Versioning</Variable>
+    <Variable Name="Manual Title" Comment="git-fusion" EvaluatedDefinition="Git Fusion Guide">Git Fusion Guide</Variable>
+    <Variable Name="Manual Title" Comment="helix-for-git" EvaluatedDefinition="Helix4Git Administrator Guide">Helix4Git Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="intro/overview" EvaluatedDefinition="Solutions Overview:&#160;Helix Core Version Control System">Solutions Overview:&#160;Helix Core Version Control System</Variable>
+    <Variable Name="Manual Title" Comment="p4admin" EvaluatedDefinition="P4Admin User Guide">P4Admin User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4api" EvaluatedDefinition="Helix Core C/C++ Developer Guide">Helix Core C/C++ Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4dist" EvaluatedDefinition="Helix Core Server Administrator Guide">Helix Core Server Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4ftp" EvaluatedDefinition="FTP Plug-In User Guide">FTP Plug-In User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4guide" EvaluatedDefinition="Helix Core Server User Guide">Helix Core Server User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4java" EvaluatedDefinition="Helix Core P4Java Developer Guide">Helix Core P4Java Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4merge" EvaluatedDefinition="P4Merge User Guide">P4Merge User Guide</Variable>
+    <Variable Name="Manual Title" Comment="P4sag" EvaluatedDefinition="Helix Core Server Administrator Guide">Helix Core Server Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4v" EvaluatedDefinition="P4V User Guide">P4V User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4vs" EvaluatedDefinition="P4VS&#160;User Guide">P4VS&#160;User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4script" EvaluatedDefinition="Helix Core APIs for Scripting">Helix Core APIs for Scripting</Variable>
+    <Variable Name="Copyrights notice" Comment="" EvaluatedDefinition="Copyright © 2015-2020">Copyright © 2015-2020</Variable>
+    <Variable Name="P4VS&#160;long" Comment="" EvaluatedDefinition="Helix Plugin for Visual Studio">Helix Plugin for Visual Studio</Variable>
+    <Variable Name="Helix4Git" Comment="" EvaluatedDefinition="Helix4Git">Helix4Git</Variable>
+    <Variable Name="Helix4Git Connector" Comment="" EvaluatedDefinition="Git Connector">Git Connector</Variable>
+    <Variable Name="Manual Title" Comment="swarm" EvaluatedDefinition="Helix Swarm Guide">Helix Swarm Guide</Variable>
+    <Variable Name="P4Perl long" Comment="" EvaluatedDefinition="Helix Core API for Perl">Helix Core API for Perl</Variable>
+    <Variable Name="P4Python long" Comment="" EvaluatedDefinition="Helix Core API for Python">Helix Core API for Python</Variable>
+    <Variable Name="P4PHP long" Comment="" EvaluatedDefinition="Helix Core API for PHP">Helix Core API for PHP</Variable>
+    <Variable Name="P4Ruby long" Comment="" EvaluatedDefinition="Helix Core API for Ruby">Helix Core API for Ruby</Variable>
+    <Variable Name="P4V long" Comment="" EvaluatedDefinition="Helix Visual Client">Helix Visual Client</Variable>
+    <Variable Name="P4EXP long" Comment="" EvaluatedDefinition="Helix Plugin for File Explorer">Helix Plugin for File Explorer</Variable>
+    <Variable Name="P4EXP" Comment="" EvaluatedDefinition="P4EXP">P4EXP</Variable>
+    <Variable Name="gd-dvcs" Comment="" EvaluatedDefinition="Using Helix Core Server for Distributed Versioning">Using Helix Core Server for Distributed Versioning</Variable>
+    <Variable Name="gd-gitfusion" Comment="" EvaluatedDefinition="Git Fusion Guide">Git Fusion Guide</Variable>
+    <Variable Name="gd-gitswarm" Comment="" EvaluatedDefinition="GitSwarm Guide">GitSwarm Guide</Variable>
+    <Variable Name="gd-gitswarm-ee" Comment="" EvaluatedDefinition="GitSwarm Enterprise Edition Guide">GitSwarm Enterprise Edition Guide</Variable>
+    <Variable Name="gd-helix4git" Comment="" EvaluatedDefinition="Helix4Git Administrator Guide">Helix4Git Administrator Guide</Variable>
+    <Variable Name="gd-hxca" Comment="" EvaluatedDefinition="Helix Core Server Cluster Administration Guide">Helix Core Server Cluster Administration Guide</Variable>
+    <Variable Name="gd-overview" Comment="" EvaluatedDefinition="Solutions Overview:&#160;Helix Version Control System">Solutions Overview:&#160;Helix Version Control System</Variable>
+    <Variable Name="gd-i18n" Comment="" EvaluatedDefinition="Internationalization Notes">Internationalization Notes</Variable>
+    <Variable Name="gd-p4api" Comment="" EvaluatedDefinition="Helix Core C/C++ Developer Guide">Helix Core C/C++ Developer Guide</Variable>
+    <Variable Name="gd-p4cmgr" Comment="" EvaluatedDefinition="Helix Core Server Administrator Guide: Cluster Management">Helix Core Server Administrator Guide: Cluster Management</Variable>
+    <Variable Name="gd-p4dist" Comment="" EvaluatedDefinition="Helix Core Server Administrator Guide">Helix Core Server Administrator Guide</Variable>
+    <Variable Name="gd-p4dtg" Comment="" EvaluatedDefinition="Helix Defect Tracking Gateway Guide">Helix Defect Tracking Gateway Guide</Variable>
+    <Variable Name="gd-p4java" Comment="" EvaluatedDefinition="Helix Core P4Java Developer Guide">Helix Core P4Java Developer Guide</Variable>
+    <Variable Name="gd-p4javadoc" Comment="" EvaluatedDefinition="P4Java API Javadoc">P4Java API Javadoc</Variable>
+    <Variable Name="gd-p4jsapi" Comment="" EvaluatedDefinition="Helix Core Javascript API for Visual Tools Developer Guide">Helix Core Javascript API for Visual Tools Developer Guide</Variable>
+    <Variable Name="gd-p4plugins" Comment="" EvaluatedDefinition="Using IDE Plug-ins">Using IDE Plug-ins</Variable>
+    <Variable Name="gd-p4sag" Comment="" EvaluatedDefinition="Helix Core Server Administrator Guide">Helix Core Server Administrator Guide</Variable>
+    <Variable Name="gd-p4script" Comment="" EvaluatedDefinition="Helix Core APIs for Scripting">Helix Core APIs for Scripting</Variable>
+    <Variable Name="gd-p4v" Comment="" EvaluatedDefinition="P4V User Guide">P4V User Guide</Variable>
+    <Variable Name="gd-swarm" Comment="" EvaluatedDefinition="Helix Swarm Guide">Helix Swarm Guide</Variable>
+    <Variable Name="gd-cmdref" Comment="" EvaluatedDefinition="Helix Core P4 Command Reference">Helix Core P4 Command Reference</Variable>
+    <Variable Name="gd-p4guide" Comment="" EvaluatedDefinition="Helix Core Server User Guide">Helix Core Server User Guide</Variable>
+    <Variable Name="VersionNumber" Comment="" EvaluatedDefinition="2017.x">2017.x</Variable>
+    <Variable Name="ReleaseDate" Comment="" EvaluatedDefinition="month year">month year</Variable>
+    <Variable Name="HTH long" Comment="" EvaluatedDefinition="Helix TeamHub">Helix TeamHub</Variable>
+    <Variable Name="HTH short" Comment="" EvaluatedDefinition="TeamHub">TeamHub</Variable>
+    <Variable Name="P4Java" Comment="" EvaluatedDefinition="P4Java">P4Java</Variable>
+    <Variable Name="Manual Title" Comment="P4Eclipse" EvaluatedDefinition="P4Eclipse User Guide">P4Eclipse User Guide</Variable>
+    <Variable Name="gd-p4exp" Comment="" EvaluatedDefinition="P4EXP User Guide">P4EXP User Guide</Variable>
+    <Variable Name="Manual Title" Comment="P4EXP" EvaluatedDefinition="P4EXP&#160;User Guide">P4EXP&#160;User Guide</Variable>
+    <Variable Name="Git Fusion" Comment="" EvaluatedDefinition="Git Fusion">Git Fusion</Variable>
+    <Variable Name="Manual Title" Comment="hth-admin" EvaluatedDefinition="Helix TeamHub Administrator Guide">Helix TeamHub Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="hth-api" EvaluatedDefinition="Helix TeamHub Developer Guide">Helix TeamHub Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="hth-user" EvaluatedDefinition="Helix TeamHub User Guide">Helix TeamHub User Guide</Variable>
+    <Variable Name="gd-hth-admin" Comment="" EvaluatedDefinition="Helix TeamHub Administrator Guide">Helix TeamHub Administrator Guide</Variable>
+    <Variable Name="gd-hth-api" Comment="" EvaluatedDefinition="Helix TeamHub Developer Guide">Helix TeamHub Developer Guide</Variable>
+    <Variable Name="gd-hth-user" Comment="" EvaluatedDefinition="Helix TeamHub User Guide">Helix TeamHub User Guide</Variable>
+    <Variable Name="copyright year" Comment="" EvaluatedDefinition="2020">2020</Variable>
+    <Variable Name="Helix Core" Comment="" EvaluatedDefinition="Helix Core">Helix Core</Variable>
+    <Variable Name="gd-hth-trial" Comment="" EvaluatedDefinition="Helix TeamHub Testdrive Guide">Helix TeamHub Testdrive Guide</Variable>
+    <Variable Name="Manual Title" Comment="hth-testdrive" EvaluatedDefinition="Helix TeamHub Testdrive Guide">Helix TeamHub Testdrive Guide</Variable>
+    <Variable Name="graph" Comment="hierarchical, not classic" EvaluatedDefinition="graph">graph</Variable>
+    <Variable Name="graphparenthesis" Comment="CmdRef topic title suffix" EvaluatedDefinition="(graph)">(graph)</Variable>
+    <Variable Name="classic" Comment="not graph, as in classic data model" EvaluatedDefinition="classic">classic</Variable>
+    <Variable Name="GraphCapital" Comment="with capital &quot;G&quot;" EvaluatedDefinition="Graph">Graph</Variable>
+    <Variable Name="mfa" EvaluatedDefinition="multi-factor authentication">multi-factor authentication</Variable>
+    <Variable Name="mfa short" Comment="" EvaluatedDefinition="MFA">MFA</Variable>
+    <Variable Name="MfaCapital" Comment="" EvaluatedDefinition="Multi-factor authentication">Multi-factor authentication</Variable>
+    <Variable Name="Manual Title" Comment="p4python" EvaluatedDefinition="Helix Core P4Python Developer Guide">Helix Core P4Python Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4perl" EvaluatedDefinition="Helix Core P4Perl Developer Guide">Helix Core P4Perl Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4ruby" EvaluatedDefinition="Helix Core P4Ruby Developer Guide">Helix Core P4Ruby Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4php" EvaluatedDefinition="Helix Core P4PHP Developer Guide">Helix Core P4PHP Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="swarmadmin" EvaluatedDefinition="Helix Swarm Administrator Guide">Helix Swarm Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="swarmuserworkflow" EvaluatedDefinition="Helix Swarm User Workflow Guide">Helix Swarm User Workflow Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4dtg" EvaluatedDefinition="Helix Defect Tracking Gateway Guide">Helix Defect Tracking Gateway Guide</Variable>
+    <Variable Name="gd-p4admin" Comment="" EvaluatedDefinition="P4Admin User Guide">P4Admin User Guide</Variable>
+    <Variable Name="gd-p4merge" Comment="" EvaluatedDefinition="P4Merge User Guide">P4Merge User Guide</Variable>
+    <Variable Name="Manual Title" Comment="P4Jenkins" EvaluatedDefinition="Helix Plugin for Jenkins Guide">Helix Plugin for Jenkins Guide</Variable>
+    <Variable Name="p4jenkins" Comment="" EvaluatedDefinition="P4 Plugin">P4 Plugin</Variable>
+    <Variable Name="gd-p4jenkins" Comment="" EvaluatedDefinition="Helix Plugin for Jenkins Guide">Helix Plugin for Jenkins Guide</Variable>
+    <Variable Name="gd-p4eclipse" Comment="" EvaluatedDefinition="P4Eclipse User Guide">P4Eclipse User Guide</Variable>
+    <Variable Name="gd-swarm-admin" Comment="" EvaluatedDefinition="Helix Swarm Administrator Guide">Helix Swarm Administrator Guide</Variable>
+    <Variable Name="gd-p4vs" Comment="" EvaluatedDefinition="P4VS User Guide">P4VS User Guide</Variable>
+    <Variable Name="p4jenkins long" Comment="" EvaluatedDefinition="Helix Plugin for Jenkins">Helix Plugin for Jenkins</Variable>
+    <Variable Name="gd-p4gt" Comment="" EvaluatedDefinition="P4GT&#160;User Guide">P4GT&#160;User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4gt" EvaluatedDefinition="P4GT&#160;User Guide">P4GT&#160;User Guide</Variable>
+    <Variable Name="P4GT long" Comment="" EvaluatedDefinition="Helix Plugin for Graphical Tools">Helix Plugin for Graphical Tools</Variable>
+    <Variable Name="HelixSAML" Comment="not SSO!" EvaluatedDefinition="Helix SAML">Helix SAML</Variable>
+    <Variable Name="Helix" Comment="Use only where needed, such in UI, where space is limited." EvaluatedDefinition="Helix">Helix</Variable>
+    <Variable Name="gd-p4gt-maya" Comment="" EvaluatedDefinition="P4GT for Maya User Guide">P4GT for Maya User Guide</Variable>
+    <Variable Name="gd-p4gt-photoshop" Comment="" EvaluatedDefinition="P4GT&#160;for Photoshop User Guide">P4GT&#160;for Photoshop User Guide</Variable>
+    <Variable Name="gd-p4gt-3ds-max" Comment="" EvaluatedDefinition="P4GT&#160;for 3ds Max User Guide">P4GT&#160;for 3ds Max User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4gt maya" EvaluatedDefinition="P4GT for Maya User Guide">P4GT for Maya User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4gt photoshop" EvaluatedDefinition="P4GT&#160;for Photoshop User Guide">P4GT&#160;for Photoshop User Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4gt 3ds max" EvaluatedDefinition="P4GT for 3ds Max User Guide">P4GT for 3ds Max User Guide</Variable>
+    <Variable Name="Swarm current API version" Comment="" EvaluatedDefinition="v9">v9</Variable>
+    <Variable Name="gd-extensions-api" Comment="" EvaluatedDefinition="Helix Core Extensions Developer Guide">Helix Core Extensions Developer Guide</Variable>
+    <Variable Name="Extensions" Comment="" EvaluatedDefinition="Extensions">Extensions</Variable>
+    <Variable Name="Manual Title" Comment="P4Lua" EvaluatedDefinition="Helix Core Extensions Developer Guide">Helix Core Extensions Developer Guide</Variable>
+    <Variable Name="P4Thumb long" Comment="" EvaluatedDefinition="P4Thumb, the Helix Thumbnail Generator">P4Thumb, the Helix Thumbnail Generator</Variable>
+    <Variable Name="gd-p4thumb" Comment="" EvaluatedDefinition="P4Thumb Guide">P4Thumb Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4thumb" EvaluatedDefinition="P4Thumb User Guide">P4Thumb User Guide</Variable>
+    <Variable Name="P4Thumb short" Comment="" EvaluatedDefinition="P4Thumb">P4Thumb</Variable>
+    <Variable Name="gd-p4ruby" Comment="" EvaluatedDefinition="Helix Core P4Ruby Developer Guide">Helix Core P4Ruby Developer Guide</Variable>
+    <Variable Name="gd-p4python" Comment="" EvaluatedDefinition="Helix Core P4Python Developer Guide">Helix Core P4Python Developer Guide</Variable>
+    <Variable Name="gd-p4perl" Comment="" EvaluatedDefinition="Helix Core P4Perl Developer Guide">Helix Core P4Perl Developer Guide</Variable>
+    <Variable Name="gd-p4php" Comment="" EvaluatedDefinition="Helix Core P4PHP Developer Guide">Helix Core P4PHP Developer Guide</Variable>
+    <Variable Name="gd-p4vjs-conversion" Comment="" EvaluatedDefinition="P4JSAPI to P4VJS Conversion Guide">P4JSAPI to P4VJS Conversion Guide</Variable>
+    <Variable Name="gd-p4vjs-user" Comment="" EvaluatedDefinition="P4VJS&#160;Developer Guide">P4VJS&#160;Developer Guide</Variable>
+    <Variable Name="P4VJS" Comment="" EvaluatedDefinition="P4VJS">P4VJS</Variable>
+    <Variable Name="P4V-JS long" Comment="" EvaluatedDefinition="P4V JavaScript API">P4V JavaScript API</Variable>
+    <Variable Name="Manual Title" Comment="p4v-js-conversion" EvaluatedDefinition="P4JSAPI to P4V-JS Conversion Guide">P4JSAPI to P4V-JS Conversion Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4v-js-user" EvaluatedDefinition="P4VJS&#160;Developer Guide">P4VJS&#160;Developer Guide</Variable>
+    <Variable Name="gd-swarm-user-workflow" Comment="" EvaluatedDefinition="Helix Swarm User Workflow Guide">Helix Swarm User Workflow Guide</Variable>
+    <Variable Name="gd-p4sl" Comment="" EvaluatedDefinition="Helix Plugin for MATLAB and Simulink (P4SL) Guide">Helix Plugin for MATLAB and Simulink (P4SL) Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4sl" EvaluatedDefinition="Helix Plugin for MATLAB and Simulink (P4SL) Guide">Helix Plugin for MATLAB and Simulink (P4SL) Guide</Variable>
+    <Variable Name="P4SL short" Comment="" EvaluatedDefinition="P4SL">P4SL</Variable>
+    <Variable Name="P4SL long" Comment="" EvaluatedDefinition="Helix Plugin for MATLAB and Simulink (P4SL)">Helix Plugin for MATLAB and Simulink (P4SL)</Variable>
+    <Variable Name="HAS" Comment="19.2" EvaluatedDefinition="Helix Authentication Service">Helix Authentication Service</Variable>
+    <Variable Name="Swarm legacy API version" Comment="" EvaluatedDefinition="v9">v9</Variable>
+    <Variable Name="hth-cli short" Comment="" EvaluatedDefinition="hth-cli">hth-cli</Variable>
+    <Variable Name="hth-cli long" Comment="" EvaluatedDefinition="Helix TeamHub CLI">Helix TeamHub CLI</Variable>
+    <Variable Name="gd-p4search" Comment="" EvaluatedDefinition="Helix Core Search Developer Guide">Helix Core Search Developer Guide</Variable>
+    <Variable Name="Manual Title" Comment="p4search" EvaluatedDefinition="Helix Core Search Developer Guide">Helix Core Search Developer Guide</Variable>
+    <Variable Name="P4Search short" Comment="" EvaluatedDefinition="P4Search">P4Search</Variable>
+    <Variable Name="P4Search long" Comment="" EvaluatedDefinition="Helix Core Search API">Helix Core Search API</Variable>
+    <Variable Name="gd-hth-cli" Comment="" EvaluatedDefinition="Helix TeamHub CLI User Guide">Helix TeamHub CLI User Guide</Variable>
+    <Variable Name="Manual Title" Comment="hth-cli" EvaluatedDefinition="Helix TeamHub CLI User Guide">Helix TeamHub CLI User Guide</Variable>
+    <Variable Name="NewVariable" Comment="" />
+    <Variable Name="gd-has" Comment="2020.1" EvaluatedDefinition="Helix Authentication Service Administrator Guide">Helix Authentication Service Administrator Guide</Variable>
+    <Variable Name="Manual Title" Comment="" EvaluatedDefinition="Helix Authentication Service Administrator Guide">Helix Authentication Service Administrator Guide</Variable>
+</CatapultVariableSet>

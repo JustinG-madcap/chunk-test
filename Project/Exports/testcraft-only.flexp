@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultExportProjectFile
+  DestinationType="Target"
+  SourceProjectPath="C:\Flare-docs\perfecto\perfecto.flprj"
+  DestinationName="testcraft-only"
+  DestinationPath="C:\Users\jwiegelmann\Documents\My Project Exports\"
+  ExportType="Files"
+  TargetPath="testcraft-help.fltar"
+  TargetConvertVariables="false"
+  TargetConvertSnippets="false">
+  <SelectedContentFiles />
+  <SelectedProjectFiles />
+</CatapultExportProjectFile>

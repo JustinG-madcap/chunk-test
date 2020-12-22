@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Toolbar skin"
+  ComponentType="TopicToolbar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="ToolbarItem">
+        <Classes>
+          <StyleClass
+            Name="NextTopic">
+            <Properties>
+              <Property
+                Name="PaddingLeft">0px</Property>
+              <Property
+                Name="PaddingRight">0px</Property>
+              <Property
+                Name="PaddingTop">0px</Property>
+              <Property
+                Name="PaddingBottom">0px</Property>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ececec</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+        <Properties>
+          <Property
+            Name="BackgroundGradient">vertical #ffffff #ececec</Property>
+          <Property
+            Name="Width">22px</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Toolbar">
+        <Properties>
+          <Property
+            Name="Float">right</Property>
+        </Properties>
+      </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Toolbar">
+          <Properties>
+            <Property
+              Name="MarginRight">30px</Property>
+          </Properties>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Toolbar">
+          <Properties></Properties>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+  </Stylesheet>
+  <TopicToolbar
+    EnableCustomLayout="true"
+    Buttons="Print|RemoveHighlight|PreviousTopic|NextTopic" />
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="ToolbarItem">
+            <Classes>
+              <StyleClass
+                Name="NextTopic">
+                <Properties>
+                  <Property
+                    Name="PaddingLeft">0px</Property>
+                  <Property
+                    Name="PaddingRight">0px</Property>
+                  <Property
+                    Name="PaddingTop">0px</Property>
+                  <Property
+                    Name="PaddingBottom">0px</Property>
+                  <Property
+                    Name="BackgroundGradient">vertical #ffffff #ececec</Property>
+                  <Property
+                    Name="Tooltip">Go to next heading</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="Print">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Print this topic</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="PreviousTopic">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Go to previous heading</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+            <Properties>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ececec</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Toolbar">
+            <Properties>
+              <Property
+                Name="Float">right</Property>
+            </Properties>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

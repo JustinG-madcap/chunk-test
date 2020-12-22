@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary conditions="">
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term0" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>access level</Term>
+        </Terms>
+        <Definition Link="">A permission assigned to a user to control which commands the user can execute. See also the 'protections' entry in this glossary and the 'p4 protect' command in the P4 Command Reference.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term1" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>admin access</Term>
+        </Terms>
+        <Definition Link="">An access level that gives the user permission to privileged commands, usually super privileges.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term3" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>atomic change transaction</Term>
+        </Terms>
+        <Definition Link="">Grouping operations affecting a number of files in a single transaction. If all operations in the transaction succeed, all the files are updated. If any operation in the transaction fails, none of the files are updated.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term4" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>base</Term>
+        </Terms>
+        <Definition Link="">For files: The file revision, in conjunction with the source revision, used to help determine what integration changes should be applied to the target revision. For checked out streams: The public have version from which the checked out version is derived.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term5" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>binary file type</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.HVE short%] file type assigned to a non-text file. By default, the contents of each revision are stored in full, and file revision is stored in compressed format.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term6" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>branch</Term>
+        </Terms>
+        <Definition Link="">(noun) A set of related files that exist at a specific location in the Perforce depot as a result of being copied to that location, as opposed to being added to that location. A group of related files is often referred to as a codeline. 
+(verb) To create a codeline by copying another codeline with the 'p4 integrate', 'p4 copy', or 'p4 populate' command.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term7" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>branch form</Term>
+        </Terms>
+        <Definition Link="">The form that appears when you use the 'p4 branch' command to create or modify a branch specification.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term8" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>branch mapping</Term>
+        </Terms>
+        <Definition Link="">Specifies how a branch is to be created or integrated by defining the location, the files, and the exclusions of the original codeline and the target codeline. The branch mapping is used by the integration process to create and update branches.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term9" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>branch view</Term>
+        </Terms>
+        <Definition Link="">A specification of the branching relationship between two codelines in the depot. Each branch view has a unique name and defines how files are mapped from the originating codeline to the target codeline. This is the same as branch mapping.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term10" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>changelist</Term>
+        </Terms>
+        <Definition Link="">A list of files, their version numbers, the changes made to the files, and a description of the changes made. A changelist is the basic unit of versioned work in [%=Perforce.Helix short%]. The changes specified in the changelist are not stored in the depot until the changelist is submitted to the depot. See also atomic change transaction and changelist number.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term11" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>changelist form</Term>
+        </Terms>
+        <Definition Link="">The form that appears when you modify a changelist using the 'p4 change' command.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term12" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>changelist number</Term>
+        </Terms>
+        <Definition Link="">An integer that identifies a changelist. Submitted changelist numbers are ordinal (increasing), but not necessarily consecutive. For example, 103, 105, 108, 109. A pending changelist number might be assigned a different value upon submission.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term13" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>change review</Term>
+        </Terms>
+        <Definition Link="">The process of sending email to users who have registered their interest in changelists that include specified files in the depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term14" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>checkpoint</Term>
+        </Terms>
+        <Definition Link="">A backup copy of the underlying metadata at a particular moment in time. A checkpoint can recreate db.user, db.protect, and other db.* files. See also metadata.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term15" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>classic depot</Term>
+        </Terms>
+        <Definition Link="">A repository of [%=Perforce.Helix short%] files that is not streams-based. Uses the Perforce file revision model, not the graph model. The default depot name is depot. See also default depot, stream depot, and graph depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term16" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>client form</Term>
+        </Terms>
+        <Definition Link="">The form you use to define a client workspace, such as with the 'p4 client' or 'p4 workspace' commands.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term17" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>client name</Term>
+        </Terms>
+        <Definition Link="">A name that uniquely identifies the current client workspace. Client workspaces, labels, and branch specifications cannot share the same name.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term18" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>client root</Term>
+        </Terms>
+        <Definition Link="">The topmost (root) directory of a client workspace. If two or more client workspaces are located on one machine, they should not share a client root directory.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term19" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>client side</Term>
+        </Terms>
+        <Definition Link="">The right-hand side of a mapping within a client view, specifying where the corresponding depot files are located in the client workspace.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term20" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>workspace view</Term>
+        </Terms>
+        <Definition>A set of mappings that specifies the correspondence between file locations in the depot and the client workspace.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term21" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>client workspace</Term>
+        </Terms>
+        <Definition Link="">Directories on your machine where you work on file revisions that are managed by [%=Perforce.HVE short%]. By default, this name is set to the name of the machine on which your client workspace is located, but it can be overridden. Client workspaces, labels, and branch specifications cannot share the same name.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term22" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>codeline</Term>
+        </Terms>
+        <Definition Link="">A set of files that evolve collectively. One codeline can be branched from another, allowing each set of files to evolve separately.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term23" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>conflict</Term>
+        </Terms>
+        <Definition Link="">1. A situation where two users open the same file for edit. One user submits the file, after which the other user cannot submit unless the file is resolved. 
+2. A resolve where the same line is changed when merging one file into another. This type of conflict occurs when the comparison of two files to a base yields different results, indicating that the files have been changed in different ways. In this case, the merge cannot be done automatically and must be resolved manually. See file conflict.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term24" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>counter</Term>
+        </Terms>
+        <Definition Link="">A numeric variable used to track variables such as changelists, checkpoints, and reviews.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term25" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>default changelist</Term>
+        </Terms>
+        <Definition Link="">The changelist used by a file add, edit, or delete, unless a numbered changelist is specified. A default pending changelist is created automatically when a file is opened for edit.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term27" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>deleted file</Term>
+        </Terms>
+        <Definition Link="">In [%=Perforce.HVE short%], a file with its head revision marked as deleted. Older revisions of the file are still available. in [%=Perforce.Helix short%], a deleted file is simply another revision of the file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term28" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>delta</Term>
+        </Terms>
+        <Definition Link="">The differences between two files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term29" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>depot</Term>
+        </Terms>
+        <Definition Link="">A file repository hosted on the server. A depot is the top-level unit of storage for versioned files (depot files or source files) within a [%=Perforce.HVE long%]. It contains all versions of all files ever submitted to the depot. There can be multiple depots on a single installation.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term30" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>depot root</Term>
+        </Terms>
+        <Definition Link="">The topmost (root) directory for a depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term31" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>depot side</Term>
+        </Terms>
+        <Definition Link="">The left side of any client view mapping, specifying the location of files in a depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term32" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>depot syntax</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.HVE short%] syntax for specifying the location of files in the depot. Depot syntax begins with: //depot/</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term34" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>diff</Term>
+        </Terms>
+        <Definition Link="">(noun) A set of lines that do not match when two files, or stream versions, are compared. A conflict is a pair of unequal diffs between each of two files and a base, or between two versions of a stream.
+(verb) To compare the contents of files or file revisions, or of stream versions.
+See also conflict.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term35" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>donor file</Term>
+        </Terms>
+        <Definition Link="">The file from which changes are taken when propagating changes from one file to another.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term36" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>exclusionary mapping</Term>
+        </Terms>
+        <Definition Link="">A view mapping that excludes specific files or directories.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term37" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>exclusionary access</Term>
+        </Terms>
+        <Definition Link="">A permission that denies access to the specified files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term38" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file conflict</Term>
+        </Terms>
+        <Definition Link="">In a three-way file merge, a situation in which two revisions of a file differ from each other and from their base file.
+Also, an attempt to submit a file that is not an edit of the head revision of the file in the depot, which typically occurs when another user opens the file for edit after you have opened the file for edit.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term39" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file pattern</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.Helix short%] command line syntax that enables you to specify files using wildcards.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term40" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file repository</Term>
+        </Terms>
+        <Definition Link="">The master copy of all files, which is shared by all users. In [%=Perforce.Helix short%], this is called the depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term41" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file revision</Term>
+        </Terms>
+        <Definition Link="">A specific version of a file within the depot. Each revision is assigned a number, in sequence. Any revision can be accessed in the depot by its revision number, preceded by a pound sign (#), for example testfile#3.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term42" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file tree</Term>
+        </Terms>
+        <Definition Link="">All the subdirectories and files under a given root directory.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term43" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>file type</Term>
+        </Terms>
+        <Definition Link="">An attribute that determines how [%=Perforce.Helix short%] stores and diffs a particular file. Examples of file types are text and binary.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term44" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>fix</Term>
+        </Terms>
+        <Definition Link="">A job that has been closed in a changelist.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term45" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>form</Term>
+        </Terms>
+        <Definition Link="">A screen displayed by certain [%=Perforce.Helix short%] commands. For example, you use the change form to enter comments about a particular changelist to verify the affected files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term48" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>group</Term>
+        </Terms>
+        <Definition Link="">A feature in [%=Perforce.Helix short%] that makes it easier to manage permissions for multiple users.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term49" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>have list</Term>
+        </Terms>
+        <Definition Link="">The list of file revisions currently in the client workspace.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term50" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>head revision</Term>
+        </Terms>
+        <Definition Link="">The most recent revision of a file within the depot. Because file revisions are numbered sequentially, this revision is the highest-numbered revision of that file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term51" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>integrate</Term>
+        </Terms>
+        <Definition Link="">To compare two sets of files (for example, two codeline branches) and determine which changes in one set apply to the other, determine if the changes have already been propagated, and propagate any outstanding changes from one set to another.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term53" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>job</Term>
+        </Terms>
+        <Definition Link="">A user-defined unit of work tracked by [%=Perforce.Helix short%]. The job template determines what information is tracked. The template can be modified by the [%=Perforce.Helix short%] system administrator. A job describes work to be done, such as a bug fix. Associating a job with a changelist records which changes fixed the bug.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term54" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>job specification</Term>
+        </Terms>
+        <Definition Link="">A form describing the fields and possible values for each job stored in the [%=Perforce.HVE short%] machine.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term55" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>job view</Term>
+        </Terms>
+        <Definition Link="">A syntax used for searching [%=Perforce.HVE short%] jobs.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term57" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>journal</Term>
+        </Terms>
+        <Definition Link="">A file containing a record of every change made to the [%=Perforce.HVE short%]’s metadata since the time of the last checkpoint. This file grows as each [%=Perforce.Helix short%] transaction is logged. The file should be automatically truncated and renamed into a numbered journal when a checkpoint is taken.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term58" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>journaling</Term>
+        </Terms>
+        <Definition Link="">The process of recording changes made to the [%=Perforce.HVE short%]’s metadata.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term59" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>label</Term>
+        </Terms>
+        <Definition Link="">A named list of user-specified file revisions.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term60" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>label view</Term>
+        </Terms>
+        <Definition Link="">The view that specifies which filenames in the depot can be stored in a particular label.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term61" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>lazy copy</Term>
+        </Terms>
+        <Definition Link="">A method used by [%=Perforce.HVE short%] to make internal copies of files without duplicating file content in the depot. A lazy copy points to the original versioned file (depot file). Lazy copies minimize the consumption of disk space by storing references to the original file instead of copies of the file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term62" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>license file</Term>
+        </Terms>
+        <Definition Link="">A file that ensures that the number of [%=Perforce.HVE short%] users on your site does not exceed the number for which you have paid.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term63" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>list access</Term>
+        </Terms>
+        <Definition Link="">A protection level that enables you to run reporting commands but prevents access to the contents of files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term64" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>local depot</Term>
+        </Terms>
+        <Definition Link="">Any depot located on the currently specified [%=Perforce.HVE short%].</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term65" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>local syntax</Term>
+        </Terms>
+        <Definition Link="">The syntax for specifying a filename that is specific to an operating system.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term66" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>lock</Term>
+        </Terms>
+        <Definition Link="">1. A file lock that prevents other clients from submitting the locked file. Files are unlocked with the 'p4 unlock' command or by submitting the changelist that contains the locked file. 2. A database lock that prevents another process from modifying the database db.* file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term67" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>log</Term>
+        </Terms>
+        <Definition Link="">Error output from the [%=Perforce.HVE short%]. To
+specify a log file, set the P4LOG environment variable or use the p4d -L flag when starting the service.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term68" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>mapping</Term>
+        </Terms>
+        <Definition Link="">A single line in a view, consisting of a left side and a right side that specify the correspondences between files in the depot and files in a client, label, or branch. See also workspace view, branch view, and label view.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term69" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>MDS checksum</Term>
+        </Terms>
+        <Definition Link="">The method used by [%=Perforce.Helix short%] to verify the integrity of versioned files (depot files).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term70" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>merge</Term>
+        </Terms>
+        <Definition Link="">1. To create new files from existing files, preserving their ancestry (branching). 2. To propagate changes from one set of files to another. 3. The process of combining the contents of two conflicting file revisions into a single file, typically using a merge tool like [%=Perforce.P4Merge%].</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term71" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>merge file</Term>
+        </Terms>
+        <Definition Link="">A file generated by the [%=Perforce.HVE short%] from two conflicting file revisions.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term72" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>metadata</Term>
+        </Terms>
+        <Definition Link="">The data stored by the [%=Perforce.HVE short%] that describes the files in the depot, the current state of client workspaces, protections, users, labels, and branches. Metadata is stored in the Perforce database and is separate from the archive files that users submit.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term73" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>modification time or modtime</Term>
+        </Terms>
+        <Definition Link="">The time a file was last changed.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term74" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>nonexistent revision</Term>
+        </Terms>
+        <Definition Link="">A completely empty revision of any file. Syncing to a nonexistent revision of a file removes it from your workspace. An empty file revision created by deleting a file and the #none revision specifier are examples of nonexistent
+file revisions.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term75" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>numbered changelist</Term>
+        </Terms>
+        <Definition Link="">A pending changelist to which [%=Perforce.Helix short%] has assigned a number.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term76" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>opened file</Term>
+        </Terms>
+        <Definition Link="">A file you have checked out in your client workspace as a result of a Helix Core server operation (such as an edit, add, delete, integrate). Opening a file from your operating system file browser is not tracked by Helix Core server.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term77" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>owner</Term>
+        </Terms>
+        <Definition Link="">The [%=Perforce.HVE short%] user who created a particular client, branch, or label.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term78" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>p4</Term>
+        </Terms>
+        <Definition Link="">1. The [%=Perforce.HVE long%] command line program. 2. The command you issue to execute commands from the operating system command line.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term79" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>p4d</Term>
+        </Terms>
+        <Definition Link="">The program that runs the [%=Perforce.HVE short%]; p4d manages depot files and metadata.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term81" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>pending changelist</Term>
+        </Terms>
+        <Definition Link="">A changelist that has not been submitted.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term82" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>[%=Perforce.HVE short%]</Term>
+        </Terms>
+        <Definition Link="">The [%=Perforce.Helix short%] depot and metadata; also, the program that manages the depot and metadata, also called [%=Perforce.HVE long%].</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term83" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>protections</Term>
+        </Terms>
+        <Definition Link="">The permissions stored in the [%=Perforce.HVE short%]’s protections table.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term84" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>RCS format</Term>
+        </Terms>
+        <Definition Link="">Revision Control System format. Used for storing revisions of text files in versioned files (depot files). RCS format uses reverse delta encoding for file storage. [%=Perforce.HVE short%] uses RCS format to store text files. See also reverse delta storage.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term85" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>read access</Term>
+        </Terms>
+        <Definition Link="">A protection level that enables you to read the contents of  files managed by [%=Perforce.HVE short%] but not make any changes.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term86" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>remote depot</Term>
+        </Terms>
+        <Definition Link="">A depot located on another [%=Perforce.HVE short%] accessed by the current [%=Perforce.HVE short%].</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term87" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>reresolve</Term>
+        </Terms>
+        <Definition Link="">The process of resolving a file after the file is resolved and before it is submitted.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term88" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>resolve</Term>
+        </Terms>
+        <Definition Link="">The process you use to manage the differences between two revisions of a file, or two versions of a stream. You can choose to resolve file conflicts by
+selecting the source or target file to be submitted, by merging the contents of conflicting files, or by making additional changes. To resolve stream conflicts, you can choose to accept the public source, accept the checked out target, manually accept changes, or combine path fields of the public and checked out version while accepting all other changes made in the checked out version.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term90" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>reverse delta storage</Term>
+        </Terms>
+        <Definition Link="">The method that [%=Perforce.Helix short%] uses to store revisions of text files. [%=Perforce.Helix short%] stores the changes between each revision and its previous revision, plus the full text of the head revision.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term91" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>revert</Term>
+        </Terms>
+        <Definition Link="">To discard the changes you have made to a file in the client workspace before a submit.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term92" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>review access</Term>
+        </Terms>
+        <Definition Link="">A special protections level that includes read and list accesses and grants permission to run the p4 review command.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term94" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>revision number</Term>
+        </Terms>
+        <Definition Link="">A number indicating which revision of the file is being referred to, typically designated with a pound sign (#).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term95" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>revision range</Term>
+        </Terms>
+        <Definition Link="">A range of revision numbers for a specified file, specified as
+the low and high end of the range. For example, myfile#5,7 specifies revisions 5 through 7 of myfile.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term96" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>revision specification</Term>
+        </Terms>
+        <Definition Link="">A suffix to a filename that specifies a particular revision of that file. Revision specifiers can be revision numbers, a revision range, change numbers, label names, date/time specifications, or client names.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term97" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>service</Term>
+        </Terms>
+        <Definition Link="">In the [%=Perforce.HVE long%], the shared versioning service that responds to requests from [%=Perforce.Helix short%] client applications. The [%=Perforce.HVE short%] (p4d) maintains depot files and metadata describing the files and also tracks the state of client workspaces.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term98" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>server root</Term>
+        </Terms>
+        <Definition Link="">The topmost directory in which p4d stores its metadata (db.* files) and all versioned files (depot files or source files). To specify the server root, set the P4ROOT environment variable or use the p4d -r flag.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term99" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>shelve</Term>
+        </Terms>
+        <Definition Link="">The process of temporarily storing files in the [%=Perforce.HVE short%] without checking in a changelist.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term100" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>status</Term>
+        </Terms>
+        <Definition Link="">For a changelist, a value that indicates whether the changelist
+is new, pending, or submitted. For a job, a value that indicates whether the job is open, closed, or suspended. You can customize job statuses. For the 'p4 status' command, by default the files opened and the files that need to be reconciled.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term101" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>stream</Term>
+        </Terms>
+        <Definition Link="">A "branch" with built-in rules that determines what changes should be propagated and in what order they should be propagated.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term102" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>submit</Term>
+        </Terms>
+        <Definition Link="">To send a pending changelist into the [%=Perforce.Helix short%] depot for processing.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term104" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>super access</Term>
+        </Terms>
+        <Definition Link="">An access level that gives the user permission to run every [%=Perforce.Helix short%] command, including commands that set protections, install triggers, or shut down the service for maintenance.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term105" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>symlink file type</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.HVE short%] file type assigned to symbolic links. On platforms that do not support symbolic links, symlink files appear as small text files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term106" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>sync</Term>
+        </Terms>
+        <Definition Link="">To copy a file revision (or set of file revisions) from the [%=Perforce.Helix short%] depot to a client workspace.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term107" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>target file</Term>
+        </Terms>
+        <Definition Link="">The file that receives the changes from the donor file when you integrate changes between two codelines.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term108" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>text file type</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.Helix short%] file type assigned to a file that contains only ASCII text, including Unicode text. See also binary file type.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term109" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>theirs</Term>
+        </Terms>
+        <Definition Link="">The revision in the depot with which the client file (your file) is merged when you resolve a file conflict. When you are working with branched files, theirs is the donor file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term110" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>three-way merge</Term>
+        </Terms>
+        <Definition Link="">The process of combining three file revisions. During a three-way merge, you can identify where conflicting changes have occurred and specify how you want to resolve the conflicts.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term112" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>trigger</Term>
+        </Terms>
+        <Definition Link="">A script that is automatically invoked by [%=Perforce.Helix short%] when various conditions are met. (See "[%=Perforce.gd-p4sag%]" on "Triggers".)</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term113" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>two-way merge</Term>
+        </Terms>
+        <Definition Link="">The process of combining two file revisions. In a two-way merge, you can see differences between the files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term114" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>typemap</Term>
+        </Terms>
+        <Definition Link="">A table in [%=Perforce.HVE short%] in which you assign file types to files.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term115" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>user</Term>
+        </Terms>
+        <Definition Link="">The identifier that [%=Perforce.HVE short%] uses to determine who is performing an operation. The three types of users are standard, service, and operator.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term116" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>view</Term>
+        </Terms>
+        <Definition Link="">A description of the relationship between two sets of files. See workspace view, label view, branch view.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term117" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>wildcard</Term>
+        </Terms>
+        <Definition Link="">A special character used to match other characters in strings. The following wildcards are available in [%=Perforce.HVE short%]: * matches anything except a slash; ... matches anything including slashes; %%0 through %%9 is used for parameter substitution in views.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term118" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>workspace</Term>
+        </Terms>
+        <Definition Link="">See client workspace.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term119" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>write access</Term>
+        </Terms>
+        <Definition Link="">A protection level that enables you to run commands that alter the contents of files in the depot. Write access  includes read and list accesses.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary_p4guide.Term120" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>yours</Term>
+        </Terms>
+        <Definition Link="">The edited version of a file in your client workspace when you resolve a file. Also, the target file when you integrate a branched file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term0" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>APC</Term>
+        </Terms>
+        <Definition Link="">The Alternative PHP Cache, a free, open, and robust framework for caching and optimizing PHP intermediate code.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term1" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>code review</Term>
+        </Terms>
+        <Definition Link="">A process in [%=Perforce.Swarm long%] by which other developers can see your code, provide feedback, and approve or reject your changes.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term3" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>comment</Term>
+        </Terms>
+        <Definition Link="">Feedback provided in [%=Perforce.Swarm long%] on a changelist, review, job, or a file within a changelist or review.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term4" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>CSRF</Term>
+        </Terms>
+        <Definition Link="">Cross-Site Request Forgery, a form of web-based attack that exploits the trust that a site has in a user's web browser.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term5" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>Git Fusion</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.Company short%] product that integrates Git with Helix, offering enterprise-ready Git repository management, and workflows that allow Git and [%=Perforce.Helix short%] users to collaborate on the same projects using their preferred tools.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term6" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>iconv</Term>
+        </Terms>
+        <Definition Link="">A PHP extension that performs character set conversion, and is an interface to the GNU libiconv library.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term8" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>MPM</Term>
+        </Terms>
+        <Definition Link="">Multi-Processing Module, a component of the Apache web server that is responsible for binding to network ports, accepting requests, and dispatch operations to handle the request.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term9" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>P4PHP</Term>
+        </Terms>
+        <Definition Link="">The PHP interface to the Helix API, which enables you to write PHP code that interacts with a [%=Perforce.HVE short%] machine.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term10" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>PECL</Term>
+        </Terms>
+        <Definition Link="">PHP Extension Community Library, a library of extensions that can be added to PHP to improve and extend its functionality.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term11" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>project</Term>
+        </Terms>
+        <Definition Link="">In [%=Perforce.Swarm long%], a group of [%=Perforce.Helix short%] users who are working together on a specific codebase, defined by one or more branches of code, along with options for a job filter, automated test integration, and automated deployment.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term12" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>RPM</Term>
+        </Terms>
+        <Definition Link="">RPM Package Manager. A tool, and package format, for managing the installation, updates, and removal of software packages for Linux distributions such as Red Hat Enterprise Linux, the Fedora Project, and the CentOS Project.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term13" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>XSS</Term>
+        </Terms>
+        <Definition Link="">Cross-Site Scripting, a form of web-based attack that injects malicious code into a user's web browser.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term14" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>broker</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.Broker long%], a server process that intercepts commands to the [%=Perforce.HVE short%] and is able to run scripts on the commands before sending them to the [%=Perforce.HVE short%].</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term15" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>check in</Term>
+        </Terms>
+        <Definition Link="">To submit a file to the [%=Perforce.Helix short%] depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term16" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>check out</Term>
+        </Terms>
+        <Definition Link="">To designate one or more files, or a stream, for edit.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term17" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>commit server</Term>
+        </Terms>
+        <Definition Link="">A server that is part of an edge/commit system that processes submitted files (checkins), global workspaces, and promoted shelves.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term18" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>copy up</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.Helix short%] best practice to copy (and not merge) changes from less stable lines to more stable lines. See also merge.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term20" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>edge server</Term>
+        </Terms>
+        <Definition Link="">A replica server that is part of an edge/commit system that is able to process most read/write commands, including 'p4 integrate', and also deliver versioned files (depot files).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term21" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>forwarding replica</Term>
+        </Terms>
+        <Definition Link="">A replica server that can process read-only commands and deliver versioned files (depot files). One or more replicate servers can significantly improve performance by offloading some of the master server load. In many cases, a forwarding replica can become a disaster recovery server.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term22" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>graph depot</Term>
+        </Terms>
+        <Definition Link="">A depot of type graph that is used to store Git repos in the [%=Perforce.HVE short%]. See also [%=Perforce.Helix4Git%] and classic depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term23" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>[%=Perforce.Helix4Git%]</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.Company short%] solution for teams using Git. [%=Perforce.Helix4Git%] offers both speed and scalability and supports hybrid environments consisting of Git repositories and 'classic' [%=Perforce.Helix short%] depots.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term24" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>[%=Perforce.HTH long%]</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.Company short%] management platform for code and artifact repository. [%=Perforce.HTH short%] offers built-in support for Git, SVN, Mercurial, Maven, and more.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term25" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>proxy server</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.HVE short%] that stores versioned files. A proxy server does not perform any commands. It serves versioned files to [%=Perforce.Helix short%] clients.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term26" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>replica</Term>
+        </Terms>
+        <Definition Link="">A [%=Perforce.HVE short%] that contains a full or partial copy of metadata from a master [%=Perforce.HVE short%]. Replica servers are typically updated every second to stay synchronized with the master server.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term27" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>stream depot</Term>
+        </Terms>
+        <Definition Link="">A depot used with streams and stream clients. Has structured branching, unlike the free-form branching of a "classic" depot. Uses the Perforce file revision model, not the graph model. See also classic depot and graph depot.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term28" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>versioned file</Term>
+        </Terms>
+        <Definition Link="">Source files stored in the [%=Perforce.Helix short%] depot, including one or more revisions. Also known as an archive file. Versioned files typically use the naming convention 'filenamev' or '1.changelist.gz'.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term29" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>archive</Term>
+        </Terms>
+        <Definition Link="">1. For replication, versioned files (as opposed to database metadata).
+2. For the 'p4 archive' command, a special depot in which to copy the server data (versioned files and metadata).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term30" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>journal rotation</Term>
+        </Terms>
+        <Definition Link="">The process of renaming the current journal to a numbered journal file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term31" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>server data</Term>
+        </Terms>
+        <Definition Link="">The combination of server metadata (the [%=Perforce.Helix short%] database) and the depot files (your organization's versioned source code and binary assets).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term2" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>repo</Term>
+        </Terms>
+        <Definition Link="">A graph depot contains one or more repos, and each repo contains files from Git users.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term7" Stem="" IgnoreCase="false" conditions="">
+        <Terms>
+            <Term>avatar</Term>
+        </Terms>
+        <Definition Link="">A visual representation of a [%=Perforce.Swarm short%] user or group. Avatars are used in [%=Perforce.Swarm short%] to show involvement in or ownership of projects, groups, changelists, reviews, comments, etc. See also the "Gravatar" entry in this glossary.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term32" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>job daemon</Term>
+        </Terms>
+        <Definition Link="">A program that checks the [%=Perforce.HVE short%] machine daily to determine if any jobs are open. If so, the daemon sends an email message to interested users, informing them the number of jobs in each category, the severity of each job, and more.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term33" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>review daemon</Term>
+        </Terms>
+        <Definition Link="">A program that periodically checks the [%=Perforce.HVE short%] machine to determine if any changelists have been submitted. If so, the daemon sends an email message to users who have subscribed to any of the files included in those changelists, informing them of changes in files they are interested in.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term34" IgnoreCase="false">
+        <Terms>
+            <Term>[%=Perforce.Company short%]</Term>
+        </Terms>
+        <Definition Link="">[%=Perforce.Company long%], a leading provider of enterprise-scale software solutions to technology developers and development operations (“DevOps”) teams requiring productivity, visibility, and scale during all phases of the development lifecycle.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term19" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>extension</Term>
+        </Terms>
+        <Definition Link="">Similar to a trigger, but more modern. See "[%=Perforce.gd-p4sag%]" on "Extensions".</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term35" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>storage record</Term>
+        </Terms>
+        <Definition Link="">An entry within the db.storage table to track references to an archive file.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term36" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>hybrid workspace</Term>
+        </Terms>
+        <Definition Link="">A workspace that maps to files stored in a depot of the classic Perforce file revision model as well as to files stored in a repo of the graph model associated with git.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term37" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>heartbeat</Term>
+        </Terms>
+        <Definition Link="">A process that allows one server to monitor another server, such as a standby server monitoring the master server (see the p4 heartbeat command).</Definition>
+    </GlossaryEntry>
+</CatapultGlossary>

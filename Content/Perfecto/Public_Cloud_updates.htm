@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/InformalTable.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 MadCap:autonum="">Public Cloud updates</h1>
+        <div class="columnLayout two-right-sidebar">
+            <div class="cell normal">
+                <div class="innerCell">
+                    <p><span>The Perfecto Continuous Quality (CQ) Lab strives to provide&#160;<strong>Public Cloud</strong> customers with access to a wide variety of mobile devices for testing, either manually (interactive mode) or via automation.</span>
+                    </p>
+                    <p><span>The devices connected to the CQ Lab run different versions of the popular mobile device operating systems (OS). With recent upgrades to our device offering, the <strong>Public Cloud</strong> now includes 1</span>20 mobile devices (both iOS and Android). All devices are also accessible to users of the&#160;<strong>Free Trial</strong>. As we continue to improve our mobile device offering in the <strong>Public Cloud</strong>, we include more devices and new popular devices as they are released to the market.</p>
+                </div>
+            </div>
+        </div>
+        <h2 MadCap:autonum="">Public Cloud access</h2>
+        <p>The following changes enhance the Public Cloud to allow you to run your existing automation scripts in it:</p>
+        <ul>
+            <li>
+                <p>Cleanup is turned on in the Cloud. This may slow down the closing of devices (or the driver), in some cases to up to 1 minute.</p>
+            </li>
+            <li>Android Appium scripts (Native, Web, and Hybrid) now use the new Appium architecture (Appium 1.10).</li>
+            <li>
+                <p>iOS Appium scripts (Web and Hybrid) and Android Appium scripts (Hybrid) now use the new Appium architecture and no longer need instrumentation.</p>
+            </li>
+            <li>
+                <p>iOS apps are automatically resigned upon installation. This causes them to lose entitlements.<br />To support automating hybrid apps, every app installed on a device in the Perfecto Mobile Cloud is resigned using a Perfecto developer certificate before being installed on the device. After the resigning process, apps using special entitlements that require the original author's certificate may not work. To override this behavior on your Appium script, specify the following capability as part of your Appium driver capabilities:&#160;<code>capabilities.setCapability("iOSResign", false);</code></p>
+            </li>
+        </ul>
+        <h2 MadCap:autonum=""><span>Considerations</span>
+        </h2>
+        <p>The following table clarifies the availability of certain features in the&#160;Public Cloud.</p>
+        <div class="note admonition" MadCap:autonum="Note ">
+            <p>These limitations do not apply to private clouds.</p>
+        </div>
+        <table class="TableStyle-InformalTable" style="mc-table-style: url('../Resources/TableStyles/InformalTable.css');" cellspacing="0">
+            <col class="TableStyle-InformalTable-Column-Regular" />
+            <col class="TableStyle-InformalTable-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">SIM cards</td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Not supported. Devices have Wifi connectivity only.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Device reservations</td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Not supported.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Device locations</td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">USA and Germany only.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">User groups</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">One user group per customer.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Security</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Normal. VPN and allow-listing are not supported.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">SSO</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Not supported. Log in using user name and password.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Username and password authentication</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Not supported. You must use a <a href="https://developers.perfectomobile.com/display/PD/Generate+security+tokens">security token</a> to authenticate.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Public folders</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Disabled.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyB-Regular-NoBackground" style="font-weight: bold;">Audio functions, including audio injection (manually through automation)</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyA-Regular-NoBackground">Disabled due to audio configuration and stability concerns.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:autonum="">Hardening restrictions</h2>
+        <p>In public clouds, users share devices, and many people use a single device over time. To ensure that all devices are available and in good condition whenever you need them, Perfecto has implemented hardening on public cloud devices. As a result of hardening, the following actions are not supported:</p>
+        <ul>
+            <li><strong>On iOS devices:</strong>
+                <ul>
+                    <li>Add or change accounts</li>
+                    <li>Set or change a passcode, fingerprint, face ID, or implement other locking methods</li>
+                    <li>Change Bluetooth settings</li>
+                    <li>Perform a factory reset</li>
+                    <li>Manually set the date and time (iOS 12 and later)</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>On Android devices:</strong>
+                </p>
+                <table class="TableStyle-InformalTable" style="width: auto;mc-table-style: url('../Resources/TableStyles/InformalTable.css');" cellspacing="0">
+                    <col class="TableStyle-InformalTable-Column-Regular" />
+                    <col class="TableStyle-InformalTable-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-InformalTable-Head-Header1">
+                            <th class="TableStyle-InformalTable-HeadE-Regular-Header1">Action not supported</th>
+                            <th class="TableStyle-InformalTable-HeadD-Regular-Header1">Version</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Reenable USB debugging</td>
+                            <td rowspan="16" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">5.0 or later</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Developer options screen</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Modify accounts</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Add or remove users</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure Bluetooth</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure WIFI</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Reset to factory settings</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Send SMS</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Make outgoing calls</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Controlling ups</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure credentials</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure mobile networks</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure tethering</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure cell broadcasts</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure VPN</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Use Android Beam</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Reset network settings</td>
+                            <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">6.0 or later</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Set wallpapter</td>
+                            <td rowspan="3" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">7.0 or later</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Use data roaming</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Set user icon</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Bluetooth sharing</td>
+                            <td rowspan="2" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">8.0 or later</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Remove manage profile</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Configure data and time, locale, and location</td>
+                            <td rowspan="4" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">9.0 or later</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Share into managed profile</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">Use unified password</td>
+                        </tr>
+                        <tr class="TableStyle-InformalTable-Body-NoBackground">
+                            <td class="TableStyle-InformalTable-BodyB-Regular-NoBackground">Switch user</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h2 MadCap:autonum="">Web and hybrid testing on iOS 13</h2>
+        <p>Currently, no official Appium release fully supports web and hybrid testing on iOS 13. As a workaround, we recommend that you temporarily use Perfecto's legacy Appium architecture, which does support iOS 13. To switch to the legacy Appium architecture, you need to modify the driver capabilities in your tests.</p>
+        <p>The following table specifies the required capabilities.</p>
+        <table class="TableStyle-InformalTable" style="mc-table-style: url('../Resources/TableStyles/InformalTable.css');" cellspacing="0">
+            <col class="TableStyle-InformalTable-Column-Regular" style="width: 22px;" />
+            <col class="TableStyle-InformalTable-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Web tests</td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+                        <p>Add the following capability:</p>
+                        <p><code><span>capabilities.setCapability("useAppiumForWeb", false);</span></code>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground" style="font-weight: bold;">Hybrid app tests</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+                        <div class="content-wrapper">
+                            <p>Add the following capabilities:</p>
+                            <p><code>capabilities.setCapability("useAppiumForHybrid", false);</code>
+                            </p>
+                            <p><code>capabilities.setCapability("automationName", "PerfectoMobile");</code>
+                            </p>
+                            <p><code>capabilities.setCapability("autoInstrument", true);</code>
+                            </p>
+                            <div class="confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block">
+                                <div class="confluence-information-macro-body">
+                                    <p><strong>Note:</strong> Make sure to review object locators. The returned object tree may be slightly different.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyB-Regular-NoBackground" style="font-weight: bold;">App tests with multiple webviews</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyA-Regular-NoBackground">
+                        <div class="content-wrapper">
+                            <p>Remove the following capability (if it exists):</p>
+                            <p><code>capabilities.setCapability("fullContextList", true);</code>
+                            </p>
+                            <div class="confluence-information-macro has-no-icon confluence-information-macro-information conf-macro output-block">
+                                <div class="confluence-information-macro-body">
+                                    <p><strong>Note:</strong> Select the required context by order ID and execute a context switch to the target webview.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

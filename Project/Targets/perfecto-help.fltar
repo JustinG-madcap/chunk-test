@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Produces Perfecto Help"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/Side Nav Perfecto.flskn"
+  FaviconSkin="/Project/Skins/Favicon Perfecto.flskn"
+  InsertMOTW="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  ExcludeUnreferencedContent="true"
+  UseEmptyAltText="true"
+  EquationsOutputType="PNG"
+  MasterPage="/Content/Resources/MasterPages/HelpMaster-side-nav.flmsp"
+  SearchFilterSet="/Project/Advanced/SearchFilterSetEmpty.flsfs"
+  MasterStylesheet="/Content/Resources/Stylesheets/perfecto.css"
+  OutputFile="index.html"
+  ConditionTagExpression="include[General.Online or Perfecto-TestCraft.Perfecto-only or Perforce.Helix], exclude[General.PDF or Perfecto-TestCraft.TestCraft-only or Perforce.DRAFT or Perforce.FutureRelease or Perforce.Helix4Git or Perforce.HTH or Perforce.P4V or Perforce.P4VS or Perforce.Swarm]"
+  UseCustomTopicFileExtension="true"
+  CustomTopicFileExtension="html"
+  EnableSitemap="true"
+  SitemapWebUrl="https://www.perforce.com/perforce/"
+  TopicToolbarSkin="/Project/Skins/Topic Toolbar.flskn"
+  SearchResultsSkin="/Project/Skins/Search Results Perfecto.flskn"
+  TabletBreakpoint="980"
+  OutputAnalyticsServer="https://api.madcapcentral.com/"
+  OutputAnalyticsLicenseId="11508"
+  LiveHelpType="Disabled"
+  OutputAnalyticsKey="2b5fbd2f-2038-48c2-8750-b373156be905"
+  ResolveCssVariables="false"
+  DefaultUrl="/Content/Perfecto/home-perfecto.htm"
+  PartialWordSearch="true"
+  MenuSkin="/Project/Skins/Menu.flskn"
+  GenerateAllSkins="false"
+  MasterToc="/Project/TOCs/Perfecto.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
+  <Variables>
+    <Variable
+      Name="Perforce/Manual Title">Solutions Overview: Helix Core Version Control System</Variable>
+    <Variable
+      Name="Perforce/VersionNumber">2020.1</Variable>
+    <Variable
+      Name="Perforce/ReleaseDate">April 2020</Variable>
+    <Variable
+      Name="Perforce/Copyrights notice">Copyright © 2015-2020</Variable>
+    <Variable
+      Name="Perforce/copyright year">2020</Variable>
+  </Variables>
+  <Glossaries> </Glossaries>
+</CatapultTarget>

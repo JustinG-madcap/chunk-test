@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="_2018_releases" Link="/Content/Perfecto/2018_releases.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="_2019_releases" Link="/Content/Perfecto/2019_releases.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="_2020_releases" Link="/Content/Perfecto/2020_releases.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Android_support_updates" Link="/Content/Perfecto/Android_support_updates.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Assets_and_setup" Link="/Content/Perfecto/Assets_and_setup.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Automation_testing" Link="/Content/Perfecto/Automation_testing.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Basics_overview" Link="/Content/Perfecto/Basics overview.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Codeless_Automation" Link="/Content/Perfecto/Codeless_Automation.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Codeless_for_desktop_web_devices" Link="/Content/Perfecto/Codeless_for_desktop_web_devices.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Download_the_Reporting_SDK" Link="/Content/Perfecto/Download_the_Reporting_SDK.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="First_steps_in_the_public_cloud" Link="/Content/Perfecto/First_steps_in_the_public_cloud.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="get_started_mobile_step1" Link="/Content/Perfecto/get-started-mobile-step1.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="get_started_mobile_step2" Link="/Content/Perfecto/get-started-mobile-step2.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="get_started_mobile_step3" Link="/Content/Perfecto/get-started-mobile-step3.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="get_started_mobile_step4" Link="/Content/Perfecto/get-started-mobile-step4.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="get_started_mobile_step5" Link="/Content/Perfecto/get-started-mobile-step5.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Get_started" Link="/Content/Perfecto/Get_started.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Get_started_with_manual_testing_in_the_Public_Cloud" Link="/Content/Perfecto/Get_started_with_manual_testing_in_the_Public_Cloud.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="home_perfecto" Link="/Content/Perfecto/home-perfecto.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="iOS_support_updates" Link="/Content/Perfecto/iOS_support_updates.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Manual_testing" Link="/Content/Perfecto/Manual_testing.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Public_Cloud_updates" Link="/Content/Perfecto/Public_Cloud_updates.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Release_20_15" Link="/Content/Perfecto/Release_20_15.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Select_a_device_for_manual_testing" Link="/Content/Perfecto/Select_a_device_for_manual_testing.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Suspension_of_support_policy___Mobile_device_OS" Link="/Content/Perfecto/Suspension_of_support_policy___Mobile_device_OS.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="Test_analysis_with_Smart_Reporting" Link="/Content/Perfecto/Test_analysis_with_Smart_Reporting.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="glossary" Link="/Content/Shared/glossary.html" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="SearchTips_perfecto" Link="/Content/Shared/SearchTips-perfecto.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="SearchTips_testcraft" Link="/Content/Shared/SearchTips-testcraft.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="access_help" Link="/Content/TestCraft/access-help.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="add_step_canvas" Link="/Content/TestCraft/add-step-canvas.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="basics_testcraft" Link="/Content/TestCraft/basics-testcraft.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="canvas" Link="/Content/TestCraft/canvas.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="create_suite" Link="/Content/TestCraft/create-suite.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="create_test" Link="/Content/TestCraft/create-test.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="execute_test" Link="/Content/TestCraft/execute-test.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="executions" Link="/Content/TestCraft/executions.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="home_testcraft" Link="/Content/TestCraft/home-testcraft.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="jobs" Link="/Content/TestCraft/jobs.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="locate_element" Link="/Content/TestCraft/locate-element.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="remove_step_canvas" Link="/Content/TestCraft/remove-step-canvas.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="set_breakpoint" Link="/Content/TestCraft/set-breakpoint.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="tests" Link="/Content/TestCraft/tests.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="tutorial_create_test" Link="/Content/TestCraft/tutorial-create-test.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="tutorials" Link="/Content/TestCraft/tutorials.htm" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+    <Map Name="glossary1" Link="/Content/Shared/glossary.html" Skin="/Project/Skins/Side Nav Perfecto CSH.flskn" />
+</CatapultAliasFile>

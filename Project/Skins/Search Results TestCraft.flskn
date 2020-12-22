@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Search Results skin"
+  ComponentType="SearchResults">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Search Heading">
+        <Properties>
+          <Property
+            Name="BorderBottom">solid 1px #898989</Property>
+          <Property
+            Name="MarginBottom">30px</Property>
+          <Property
+            Name="MarginTop">30px</Property>
+          <Property
+            Name="Color">#404040</Property>
+          <Property
+            Name="LineHeight">20pt</Property>
+          <Property
+            Name="FontSize">18pt</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link">
+        <Properties>
+          <Property
+            Name="TextDecoration">none</Property>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (active)">
+        <Properties>
+          <Property
+            Name="TextDecoration">none</Property>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (focus)">
+        <Properties>
+          <Property
+            Name="TextDecoration">none</Property>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (hover)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (visited)">
+        <Properties>
+          <Property
+            Name="TextDecoration">none</Property>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Path">
+        <Properties>
+          <Property
+            Name="Color">#898989</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Result">
+        <Properties>
+          <Property
+            Name="BoxShadowColor">#898989</Property>
+          <Property
+            Name="BoxShadowVShadow">2px</Property>
+          <Property
+            Name="BackgroundColor">transparent</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Suggestion Link">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Link">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Link (active)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Link (focus)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Link (hover)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Micro Content Response Path">
+        <Properties>
+          <Property
+            Name="Color">#898989</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (selected)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (hover)">
+        <Properties>
+          <Property
+            Name="Color">#16a4de</Property>
+        </Properties>
+      </Style>
+    </Styles>
+  </Stylesheet>
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Search Heading">
+            <Properties>
+              <Property
+                Name="Color">#ffffff</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link">
+            <Properties>
+              <Property
+                Name="Color">#2f6db5</Property>
+              <Property
+                Name="TextDecoration">none</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link (active)">
+            <Properties>
+              <Property
+                Name="Color">#2f6db5</Property>
+              <Property
+                Name="TextDecoration">none</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link (focus)">
+            <Properties>
+              <Property
+                Name="Color">#2f6db5</Property>
+              <Property
+                Name="TextDecoration">none</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link (hover)">
+            <Properties>
+              <Property
+                Name="Color">#2f6db5</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link (visited)">
+            <Properties>
+              <Property
+                Name="Color">#00aeef</Property>
+              <Property
+                Name="TextDecoration">none</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Path">
+            <Properties>
+              <Property
+                Name="Color">#898989</Property>
+            </Properties>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/InformalTable.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 MadCap:autonum="">iOS support updates</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/note-first-beta-versions.flsnp" />
+        <div class="note admonition" MadCap:autonum="Note ">
+            <p><b>API Change Notice (effective as of release 19.10):</b> Because the API used to implement the IDE gesture command or Perfecto<a href="https://developers.perfectomobile.com/display/PD/Gesture" rel="nofollow">mobile:touch:gesture</a><span class="apple-converted-space">&#160;extension </span>for iOS is being deprecated, we are updating its implementation to be based on a newer API. While the new API performs more accurately and consistently, in some cases, parameter values in existing scripts may trigger <strong>different behavior</strong> and may need to be updated.</p>
+        </div>
+        <table class="TableStyle-InformalTable" style="width: 100.0%;mc-table-style: url('../Resources/TableStyles/InformalTable.css');" cellspacing="0">
+            <col style="width: 14.548%;" class="TableStyle-InformalTable-Column-Regular" />
+            <col style="width: 85.452%;" class="TableStyle-InformalTable-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-InformalTable-Head-Header1">
+                    <th class="TableStyle-InformalTable-HeadE-Regular-Header1">iOS/iPadOS version</th>
+                    <th class="TableStyle-InformalTable-HeadD-Regular-Header1">Support terms</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">14.2 Beta 2</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Supported in alignment with Appium 1.17. The limitations of previous iOS 13 and 14 versions still apply. In addition, XCUITest is not supported with this version.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">14.0.1 GA</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+                        <div class="content-wrapper">
+                            <p>Supported in alignment with Appium 1.17. The limitations of previous iOS 13 versions still apply. In addition, this version comes with a limitation related to passcode, fingerprint, and faceID handling.&#160;<span style="color: rgb(29,28,29);">To prevent any locking issues and maintain device availability while using device locks, we recommend that you set the device's</span><strong style="text-align: left;">Auto-Lock</strong><span style="color: rgb(29,28,29);">setting (under</span><strong style="text-align: left;">Settings &gt; Display &amp; Brightness</strong><span style="color: rgb(29,28,29);">)&#160; to</span><strong style="text-align: left;">Never</strong><span style="color: rgb(29,28,29);">. If this is not possible for you, at least set this setting to the maximum available value, which is 5 minutes for iPhones and 15 minutes for iPads.</span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">13.7 GA</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Supported in alignment with Appium 1.17. The limitations of previous iOS 13 versions still apply.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">13.6 and 13.6.1 GA</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Supported in alignment with Appium 1.17. The limitations of previous iOS 13 versions still apply.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">13.5 and <span style="color: rgb(29,28,29);">13.5.1 GA</span></td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Supported in alignment with Appium 1.17. The limitations of previous iOS 13 versions still apply.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">13.4 GA</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Supported in alignment with Appium 1.17. The limitations of previous iOS 13 versions still apply.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <p>13 to 13.3 GA,<br /><span style="letter-spacing: 0.0px;">13.3.1 Beta</span></p>
+                    </td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+                        <ul>
+                            <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models when the app has been compiled with an old Xcode version (below 10).</li>
+                            <li>On iPad devices running iOS 13.1.x, opening a keyboard from a text field causes incorrect dimensions of the root element to be returned when retrieving objects. This, in turn, causes objects in the Object Spy to display incorrectly when the device is in landscape mode. This issue affects the application even after the keyboard is closed. For objects to display correctly again, you must close the application using the <strong>Close app</strong> button and relaunch it.</li>
+                            <li>On new devices running iOS 13, applications built with older Xcode versions may return incorrect objects coordinates.</li>
+                        </ul>
+                        <p>For information on working with privacy popups on iOS 13 devices, see <a href="http://developers.perfectomobile.com/display/TT/iOS+13+%7C+Handle+privacy+pop-ups" class="external-link" rel="nofollow">iOS 13 | Handle privacy pop-ups</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyE-Regular-NoBackground"><span style="color: rgb(29,28,29);">12.4.7</span>
+                    </td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Fully supported.</td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td colspan="1" class="TableStyle-InformalTable-BodyB-Regular-NoBackground">12.4.6</td>
+                    <td colspan="1" class="TableStyle-InformalTable-BodyA-Regular-NoBackground">Fully supported.</td>
+                </tr>
+            </tbody>
+        </table>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Click to view earlier updates by Perfecto version</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table class="wrapped confluenceTable">
+                    <colgroup>
+                        <col />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="confluenceTh">Release</th>
+                            <th class="confluenceTh">Updates</th>
+                        </tr>
+                        <tr style="height: 27px;">
+                            <td colspan="1" class="confluenceTd"><strong>20.3</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13.4 beta 2 in alignment with&#160;<span>Appium 1.16.</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.16</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for a new <strong>executeDriverScript() </strong>Appium command for iOS devices that allows packing other Appium commands to be executed by Appium server as a single batch. For more details see: <a href="https://javadoc.io/doc/io.appium/java-client/latest/io/appium/java_client/ExecutesDriverScript.html" class="external-link" rel="nofollow">https://javadoc.io/doc/io.appium/java-client/latest/io/appium/java_client/ExecutesDriverScript.html</a></p>
+                                <p>Support for iOS and iPadOS 13 to 13.3 GA as well as 13.3.1 Beta with the following limitations:</p>
+                                <ul>
+                                    <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models when the app has been compiled with an old Xcode version (below 10).</li>
+                                    <li>On iPad devices running iOS 13.1.x, opening a keyboard from a text field causes incorrect dimensions of the root element to be returned when retrieving objects. This, in turn, causes objects in the Object Spy to display incorrectly when the device is in landscape mode. This issue affects the application even after the keyboard is closed. For objects to display correctly again, you must close the application using the <strong>Close app</strong> button and relaunch it.</li>
+                                    <li>Due to an iOS 13 issue, Perfecto Connect and NetEm functionalities are currently not supported on iOS 13 devices.</li>
+                                    <li>On new devices running iOS 13, applications built with older Xcode versions may return incorrect objects coordinates.</li>
+                                </ul>
+                                <p>For information on working with privacy popups on iOS 13 devices, see <a href="http://developers.perfectomobile.com/display/TT/iOS+13+%7C+Handle+privacy+pop-ups" class="external-link" rel="nofollow">iOS 13 | Handle privacy pop-ups</a>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.14</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS and iPadOS 13 to 13.2.2 GA as well as 13.3 Beta 2 with the following limitations:</p>
+                                <ul>
+                                    <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models when the app has been compiled with an old Xcode version (below 10).</li>
+                                    <li>On iPad devices running iOS 13.1.x, opening a keyboard from a text field causes incorrect dimensions of the root element to be returned when retrieving objects. This, in turn, causes objects in the Object Spy to display incorrectly when the device is in landscape mode. This issue affects the application even after the keyboard is closed. For objects to display correctly again, you must close the application using the <strong>Close app</strong> button and relaunch it.</li>
+                                    <li>Due to an iOS 13 issue, Perfecto Connect and NetEm functionalities are currently not supported on iOS 13 devices.</li>
+                                    <li>On new devices running iOS 13, applications built with older Xcode versions may return incorrect objects coordinates.</li>
+                                </ul>
+                                <p>For information on working with privacy popups on iOS 13 devices, see <a href="http://developers.perfectomobile.com/display/TT/iOS+13+%7C+Handle+privacy+pop-ups" class="external-link" rel="nofollow">iOS 13 | Handle privacy pop-ups</a>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.13.1</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13 to 13.1.3 and iPadOS 13.1 to 13.1.3 GA as well as 13.2 Beta 3 with the following limitations:</p>
+                                <ul>
+                                    <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models.</li>
+                                </ul>
+                                <ul>
+                                    <li>Due to a bug in iOS 13, opening a SFSafariViewController class from a view controller that is not the main view controller causes the objects inside the controller to be inaccessible.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.12</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p><span>Support for </span><span>iOS 13 to </span>13.1.2 and iPadOS 13.1 to 13.1.2 GA as well as 13.2 Beta with the following limitations:</p>
+                                <ul>
+                                    <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models.</li>
+                                </ul>
+                                <ul>
+                                    <li>Due to a bug in iOS 13, opening a SFSafariViewController class from a view controller that is not the main view controller causes the objects inside the controller to be inaccessible.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.11</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13.1 and iPadOS 13.1 Beta 2 with the following limitations:</p>
+                                <ul>
+                                    <li>Touch &amp; MultiTouch Actions executed by coordinates may not be performed on specific device models.</li>
+                                </ul>
+                                <p>Support for iOS 13 and iPadOS 13 8th developer beta with the following limitations:</p>
+                                <ul>
+                                    <li><span>Due to a bug in iOS 13, opening a SFSafariViewController class from a view controller that is not the main view controller causes the objects inside the controller to be inaccessible.</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.10</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13 and iPadOS 13 5th developer beta with the following limitations:</p>
+                                <ul>
+                                    <li>Only slow video is supported (via Mac or HSS).</li>
+                                    <li>Due to a bug in iOS 13, opening a SFSafariViewController class from a view controller that is not the main view controller causes the objects inside the controller to be inaccessible.</li>
+                                </ul>
+                                <div class="table-wrap">
+                                    <table class="wrapped confluenceTable">
+                                        <tbody>
+                                            <tr>
+                                                <td class="confluenceTd">&lt;p hidden&gt;(NP-38132)&lt;/p&gt;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.9</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13 and iPadOS 13 4th developer beta with the following limitations:</p>
+                                <ul>
+                                    <li><span>Web and&#160;</span><span>SFSafariViewController automation are supported for hosted clouds, but th</span>ere may be issues with finding native elements after switching from hybrid context to native.</li>
+                                    <li>Applications without a configured launch screen may report an incorrect resolution, causing object coordinates and sizes to be reported incorrectly.</li>
+                                    <li>Password field typing entry is not shown in the interactive video stream, that is while connecting to a new Wi-Fi network.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>19.8</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <p>Support for iOS 13 and iPadOS 13 2nd developer beta with the below limitations:</p>
+                                <ul>
+                                    <li><span>Native elements click are not supported when using&#160;</span><span>PerfectoMobile</span><span>&#160;automation framework for testing instrumented apps</span><span><br /></span>
+                                    </li>
+                                    <li><span>Web automation and&#160;</span><span>SFSafariViewController are</span><span>&#160;not supported for both&#160;</span><span>Perfecto</span><span>Mobile</span><span>&#160;&amp; Appium automation&#160;</span><span>frameworks</span>
+                                    </li>
+                                    <li><span>Device and app&#160;</span><span>vitals is not supported</span>
+                                    </li>
+                                    <li><span>GPS injection is not supported</span>&#160;</li>
+                                    <li><span>When a device is on the SpringBoard (that is HOME screens), object retrieval (through manual interaction or automation script) will fail</span>
+                                    </li>
+                                    <li>Password field typing entry is not shown in the interactive video stream, that is while connecting to a new Wi-Fi network&#160;</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.17</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><a href="http://developers.perfectomobile.com/pages/viewpage.action?pageId=26969654" class="external-link" rel="nofollow">Customized Instrumentation Python script</a> is updated to provide support for all versions of Python. Download the new version from the <a href="https://github.com/PerfectoCode/Community-Samples/tree/master/CustomizedInstrumentation" class="external-link" rel="nofollow">GitHub repository</a>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.8</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><a href="http://developers.perfectomobile.com/display/PD/Legacy+%7C+iOS+Object+Tree+Optimization" class="external-link" rel="nofollow">Object Tree Optimization</a> now supported <span>for XCUITest</span> devices. New functionality allows the test script to limit the number of UI Elements retrieved for searching, thereby speeding up the test execution.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.7</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><strong>Fixed</strong>: Error message when application fails to launch, <a href="http://developers.perfectomobile.com/display/TT/iOS+Troubleshooting%3A+Application+fails+to+launch+-+trust+issue" class="external-link" rel="nofollow">due to trust issues</a>, now provides clearer information, allowing the tester to fix the problem and continue testing.</li>
+                                    <li><strong>Limitation</strong>: <a href="http://developers.perfectomobile.com/pages/viewpage.action?pageId=29558344" class="external-link" rel="nofollow">Object Optimization</a><u>does not</u> affect <em>instrumented</em> applications when using the <strong><em>Perfecto Mobile</em> Automation Framework</strong>. It will affect <em>non-instrumented</em> applications when using either of the Application Frameworks.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.6</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Select a device based on the Perfecto features supported. See <a href="http://developers.perfectomobile.com/display/PD/Select+a+device+based+on+supported+features" class="external-link" rel="nofollow">details</a>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.4</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Appium/Selenium scripts running on XCUITest-framework based devices will generate screenshots as reporting artifacts when the <strong>takesScreenshot</strong> capability is set to <em><strong>true</strong></em>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.3</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>When running <em>IosDriver</em> for <strong>XCUITest</strong> devices, Appium does not support updating the text in the text-field when using a keyboard application other than the iOS Keyboard.</li>
+                                    <li>XCUITest implementation is fully compatible with Appium 1.7.2</li>
+                                    <li>Support for <a href="http://developers.perfectomobile.com/display/TT/Test+your+app+for+specific+language+and+region+settings" class="external-link" rel="nofollow">setting device language and region</a> using <em><strong>language</strong></em>and <em><strong>locale</strong></em>capabilities for Appium scripts on XCUITest Framework devices.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>18.1</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Devices running iOS 11.1 - some <em>vitals</em> measurements are affected by changes in the Apple API. See <a href="http://developers.perfectomobile.com/pages/viewpage.action?pageId=19170123" class="external-link" rel="nofollow">details</a>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.13</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><strong>Fixed</strong>: Image injection for barcode reader applications support use of the PhoneGap Plugin BarcodeScanner interface on iOS devices.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.12</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>iOS devices configured for the XCUITest Framework support a <strong>passcode</strong> definition for the device. To define a passcode for the device, contact support.<br /><strong>Note</strong>: When <strong>passcode</strong> is defined, the <strong><em>Reboot</em></strong>function for the device <a href="http://developers.perfectomobile.com/display/ARCHIVE/iOS+Troubleshooting%3A+Passcode+Support" class="external-link" rel="nofollow">is not supported</a>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.11</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><strong>Fixed:</strong> Objects in Safari are identified and displayed properly in <em>Object Spy</em> regardless of the interface language.</li>
+                                    <li>Appium interfaces for iOS automation are completely compatible with Appium 1.7 toolset.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.10</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Selenium scripts support retrieving the hittable attribute of iOS 11 UI Elements. Use the code - <em>element.getAttribute("hittable")</em> to retrieve the value in String format. To retrieve as a boolean use: <em>boolean hittable = element.getAttribute("hittable").equals("true");</em></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.9</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>The Perfecto Automation Framework object-tree is not supported for iOS devices configured for the XCUITest framework. This includes iOS 11 devices and specially configured iOS 10 devices.<br /><ul><li>Perfecto now provides a translation mechanism to support Perfecto Automation Framework based XPath specifiers when working with these devices. Read more about this <a href="http://developers.perfectomobile.com/display/TT/Migrating+iOS+test+scripts+to+XCUITest-based+automation+infrastructure#MigratingiOStestscriptstoXCUITest-basedautomationinfrastructure-perf-framework" class="external-link" rel="nofollow"><span>here</span></a>.</li></ul></li>
+                                    <li>Perfecto supports <a href="http://developers.perfectomobile.com/display/TT/Using+iOS+3D+Touch" class="external-link" rel="nofollow">iOS <strong>3D Touch</strong></a> in Interactive, Native Automation, and Selenium testing.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.7</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Connect iOS11 devices running beta 6 to customer Lab's</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.5</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>iOS11 beta supported in <em>limited</em> Early Access. Contact CSM for access to devices.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.4</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Improved error messages provide more user-friendly information for system exceptions in debug messages. Makes it easier to understand the problem when working with applications on iOS devices.</li>
+                                    <li><strong>Limitation</strong>: Location access permissions are not reset when using Perfecto tools (widgets or commands) to uninstall an application from a device. To disable these permissions, <br /><ul><li>Explicitly disable them use the Settings menu for the application after re-installing the app.</li><li>Reset "Location &amp; Privacy" before installation.</li></ul></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>10.3</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li>Speedup the findElement method for iOS applications with View objects that have a large number of children objects by <a href="http://developers.perfectomobile.com/display/PD/Legacy+%7C+iOS+Object+Tree+Optimization" class="external-link" rel="nofollow">optimizing object tree generation</a> and limiting the tree to only the currently visible objects.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>9.8</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><strong>Fixed</strong> - When installing a new version of an application on iOS device, and the application is camera instrumented then the old version will automatically be uninstalled prior to installing the new version.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" class="confluenceTd"><strong>9.7</strong>
+                            </td>
+                            <td colspan="1" class="confluenceTd">
+                                <ul>
+                                    <li><strong>Fixed</strong> - Type text command functions properly when typing strings that include the <em>tilde</em>('~') character.</li>
+                                    <li>Unlocking Perfecto Lab devices that support passcode locking now supported.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="confluenceTd"><strong>9.6</strong>
+                            </td>
+                            <td class="confluenceTd">
+                                <ul>
+                                    <li>XCTest Runner now supports applications compiled with XCode versions prior to 8.1 on iOS 10.1 devices.</li>
+                                    <li>Perfecto vitals collection has extended data collection for long-running application testing.</li>
+                                    <li>Implemented optimizations for displaying large object trees in the Object Spy, for applications with thousands of UI objects in their implementation.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

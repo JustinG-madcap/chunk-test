@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h2 MadCap:autonum="">Navigation</h2>
+        <p>Use following controls to navigate the content in this manual:</p>
+        <ul>
+            <li>The arrow buttons <img src="../Images/icon-previous heading.png" alt="Previous heading icon" class="inline" /> and <img src="../Images/icon-next-heading.png" alt="Next heading icon" class="inline" /> at the top of any page bring you to the next or previous heading.</li>
+            <li>
+                <p>The links at the top of any page indicate the location of a topic in the hierarchy.</p>
+                <div class="img">
+                    <img src="../Images/how-to-breadcrumbs.png" />
+                </div>
+            </li>
+            <li>
+                <p>The icons  in the footer of any page provide links to resources such as the <a href="https://www.perforce.com/support/self-service-resources/documentation" target="_blank">Documentation Portal</a> and the <a href="https://www.perforce.com/support/video-tutorials" target="_blank">Video Library</a>.</p>
+                <div class="img">
+                    <img src="../Images/how-to-links.png" alt="Footer links" />
+                </div>
+            </li>
+        </ul>
+        <h2 MadCap:autonum="">Search tips</h2>
+        <MadCap:snippetBlock src="SearchTips.flsnp" />
+    </body>
+</html>

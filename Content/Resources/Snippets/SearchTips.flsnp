@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>Multiple search terms find topics with one or more of the terms, and each term gets  a different highlight color.</li>
+            <li>
+                <p>For an exact multi-word search, enclose the set of terms within quotes to form a single string:</p>
+                <ul>
+                    <li>
+                        <span class="code">work</span> also finds <span class="code">workspace</span>, but <code>"work"</code>  excludes  <span class="code">workspace</span>.</li>
+                    <li>
+                        <span class="code">request</span> also finds <span class="code">requests</span> and <span class="code">requesting</span>, but <code>"<span class="code">request</span>"</code> excludes them.</li>
+                    <li>
+                        <span class="code">configuration</span> also finds topics with <span class="code">configuring</span>, but <code>"<span class="code">configuration</span>"</code>  excludes them.</li>
+                </ul>
+            </li>
+            <li>To customize your search further, add an operator (<span class="code">and</span>, <span class="code">not</span>, <span class="code">or</span>) between search terms:<ul><li><span class="code">configuration and settings</span> narrows your search and only finds topics that contain both <span class="code">configuration</span> and <span class="code">settings</span>. </li><li><span class="code">configuration not settings</span> widens your search and finds topics that contain <span class="code">configuration</span> but not <span class="code">settings</span>, topics that contain <span class="code">settings</span> but not <span class="code">configuration</span>, and excludes topics that contain both. </li><li><span class="code">configuration or settings</span> widens your search and finds topics that contain <span class="code">configuration</span> or <span class="code">settings</span> and also topics that contain both <span class="code">configuration</span> and <span class="code">settings</span>. </li><li>If your search contains an operator that you want to use as a word, enclose the phrase in quotes to tell search not to use it as an operator. For example, <span class="code">not required</span> will return a search format error, but "<span class="code">not required</span>" finds topics that contain <span class="code">not required</span>. </li></ul></li>
+            <li>You can search for any string on a page with <span class="code">Command-F</span> on Mac or <span class="code">CTRL+F</span> on Windows.</li>
+        </ul>
+    </body>
+</html>

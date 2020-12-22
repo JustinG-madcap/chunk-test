@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags"
+  conditions="">
+  <ConditionTag
+    Comment=""
+    Name="PDF"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#98fb98"
+    Name="Online"
+    Comment=""
+    Color="Normal"
+    OriginalName="Online" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Microcontent-exclude"
+    Comment=""
+    OriginalName="Microcontent-exclude" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Microcontent-include"
+    Comment="" />
+</CatapultConditionTagSet>

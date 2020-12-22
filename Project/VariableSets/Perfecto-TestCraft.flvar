@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="Perfecto">Perfecto</Variable>
+  <Variable
+    Name="CompanyName"
+    Comment=""
+    EvaluatedDefinition="TestCraft">TestCraft</Variable>
+  <Variable
+    Name="featureCodeless"
+    Comment=""
+    EvaluatedDefinition="Codeless">Codeless</Variable>
+  <Variable
+    Name="featureCodeless"
+    Comment=""
+    EvaluatedDefinition="TestCraft">TestCraft</Variable>
+</CatapultVariableSet>

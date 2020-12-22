@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+        <p class="invisible">
+            <MadCap:xref href="../../Shared/SearchTips-perfecto.htm" MadCap:conditions="Perfecto-TestCraft.Perfecto-only">SearchTips</MadCap:xref>
+            <MadCap:xref href="../../Shared/SearchTips-testcraft.htm" MadCap:conditions="Perfecto-TestCraft.TestCraft-only">SearchTips</MadCap:xref>
+        </p>
+        <div class="home-footer">
+            <div><a href="mailto:perfecto-help@perforce.com?subject=Documentation feedback" target="_blank"><img src="../FooterImages/Documentation.png" title="Email us your feedback" alt="Email us" class="FooterIcon" style="height: 20px;" /> </a>
+            </div>
+            <div><a href="https://www.perfecto.io/resources/papers-and-videos" target="_blank"><img src="../FooterImages/Videos.png" title="Access Perfecto videos" alt="Perfecto videos" class="FooterIcon" style="height: 20px;" /></a>
+            </div>
+            <div><a href="https://developers.perfectomobile.com/display/TT/Tips+and+Tricks" target="_blank"><img src="../FooterImages/Tips and tricks.png" title="Visit the Perfecto Knowledge Base" alt="Perfecto Knowledge Base" class="FooterIcon" style="height: 20px;" /></a>
+            </div>
+            <div><a href="https://github.com/PerfectoCode/Templates" target="_blank"><img src="../FooterImages/Code Samples.png" title="Access Perfecto code samples" alt="Perfecto code samples" class="FooterIcon" style="height: 20px;" /></a>
+            </div>
+            <div><a href="https://developers.perfectomobile.com/display/PSC/Courses" target="_blank"><img src="../FooterImages/courses-small.png" title="Access Perfecto training courses" alt="Perfecto courses" class="FooterIcon" style="height: 20px;" /></a>
+            </div>
+            <div><a href="https://support.perfecto.io" target="_blank"><img src="../FooterImages/Contact support.png" title="Go to Perfecto customer support" alt="Perfecto customer support" class="FooterIcon" style="height: 20px;" /></a>
+            </div>
+            <div><a href="http://www.perforce.com/" target="_blank"><img src="../FooterImages/perforce-logo.png" style="width: 150px;" /></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="../google-code-prettify/prettify.js">
+        </script>
+        <script type="text/javascript">
+    // hookup prettify
+    $("pre.programlisting").each(function () {
+      var $this = $(this),
+          lang = $this.attr("lang");
+      if (lang) {
+        $this.addClass("lang-" + lang);
+       // if (lang !== "bash") 
+		// {
+        $this.addClass("prettyprint");
+        //}
+      }
+    });
+    window.prettyPrint();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Produces TestCraft Help"
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/TestCraft/home-testcraft.htm"
+  MasterToc="/Project/TOCs/TestCraft.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/testcraft.css"
+  Skin="/Project/Skins/Side Nav TestCraft.flskn"
+  TopicToolbarSkin="/Project/Skins/Topic Toolbar.flskn"
+  SearchResultsSkin="/Project/Skins/Search Results TestCraft.flskn"
+  FaviconSkin="/Project/Skins/Favicon TestCraft.flskn"
+  ConditionTagExpression="include[Perfecto-TestCraft.TestCraft-only], exclude[Perfecto-TestCraft.Perfecto-only]"
+  MasterPage="/Content/Resources/MasterPages/HelpMaster-side-nav.flmsp"
+  TabletBreakpoint="980"
+  PartialWordSearch="true"
+  EnableSitemap="true"
+  SitemapWebUrl="https://www.perforce.com/perforce/"
+  InsertMOTW="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  UseCustomTopicFileExtension="true"
+  CustomTopicFileExtension="html"
+  UseEmptyAltText="true"
+  ContentInclusionType="Referenced"
+  SearchFilterSet="/Project/Advanced/SearchFilterSetEmpty.flsfs"
+  EquationsOutputType="PNG"
+  OutputFile="index.html">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
+  <Variables>
+    <Variable
+      Name="Perfecto-TestCraft/featureCodeless">TestCraft</Variable>
+    <Variable
+      Name="Perfecto-TestCraft/CompanyName">TestCraft</Variable>
+  </Variables>
+</CatapultTarget>

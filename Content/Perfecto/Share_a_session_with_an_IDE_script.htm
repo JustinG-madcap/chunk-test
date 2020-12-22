@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 MadCap:autonum="">Share a session with an IDE script</h1>
+        <div class="note admonition" MadCap:autonum="Note ">
+            <p> At this point, session sharing for desktop web is only available for Windows machines.</p>
+        </div>
+        <p>For the purpose of script development and debugging, you can open a device in the Perfecto Lab and share that session with your favorite IDE. Session sharing allows you to work interactively on the device in the Perfecto Lab while simultaneously executing an Appium or Selenium script from your IDE.&#160;</p>
+        <h2 MadCap:autonum="">Step-by-step instructions</h2>
+        <p>What kind of session do you want to share? Expand the corresponding steps.</p>
+        <div class="note admonition" MadCap:autonum="Note ">
+            <ul>
+                <li>When you use a new device or start a new Perfecto Lab session, you need a new session ID.</li>
+                <li>If you intend to run your script outside of session sharing, before committing, remove these capabilities from the script code. Otherwise, your script will fail.</li>
+            </ul>
+        </div>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Mobiledevice">
+						  Mobile device
+	  				  </a>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://www.youtube.com/watch?v=sI_S-aEjy2c" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+                <p><strong>To share the session ID:</strong>
+                </p>
+                <ol>
+                    <li>
+                        <p>In the <strong>Manual Testing</strong> view, open a mobile device.</p>
+                    </li>
+                    <li>
+                        <p>On the device tab, in the device toolbar, click the&#160;<strong>Copy Session ID</strong>&#160;icon<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" height="14" src="../../../perfecto/Content/Resources/Images/icon-copy-session-id.png" /></span>.</p>
+                    </li>
+                    <li>
+                        <p>In the <strong>Copy session ID</strong>&#160;form, copy the session ID or capability code sample to the clipboard.</p>
+                        <p>
+                            <img src="../Resources/Images/session-id.png" class="ThumbNoBorder" />
+                            <br />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In your IDE, add the&#160;<code><strong>deviceSessionID</strong></code>&#160;capability to your script and paste the session ID as the value.</p>
+                        <p class="ExampleHeadText" MadCap:autonum="Example &#160;&#160;">&#160;</p><pre class="programlisting" xml:space="preserve">capabilities.setCapability("deviceSessionId", "3d3718b8-0700-4ecb-99dd-71c1def7138b");</pre>
+                    </li>
+                    <li>
+                        <p>If you have 2 or more devices open, also specify the device ID to use (same as you would do if running a test on a device without the device being open in Perfecto), as follows:</p>
+                        <ol>
+                            <li>
+                                <p>On the device toolbar, click the information icon&#160;<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="../../../perfecto/Content/Resources/Images/icon-info.png" /></span>.</p>
+                            </li>
+                            <li>In the device info form, on the <strong>Device</strong> tab, copy the <strong>Device ID</strong>.</li>
+                            <li>
+                                <p>In your IDE, add the <code><strong>deviceName</strong></code> capability to your script.</p>
+                                <div class="code panel pdl conf-macro output-block" style="border-width: 1px;">
+                                    <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>deviceName capability example</b>
+                                    </div>
+                                    <div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" xml:space="preserve">capabilities.setCapability("deviceName", "00008030-001D29661488802E");</pre>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Run your test. This performs all your test steps on the device in real-time.</li>
+                    <li>Access your test report. The report becomes available when you release the device.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Desktopweb">
+						  Desktop web
+	  				  </a>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Watch the following video to see how to copy a session ID and include it in a script.</p>
+                <p>&#160;</p>
+                <p>
+                    <object MadCap:HTML5Video="true" src="../Resources/Multimedia/desktop-web-session-sharing.mp4" MadCap:Param_controls="true" MadCap:Param_muted="true" MadCap:Param_loop="true" MadCap:Param_autoplay="true" style="width: 90%;max-width: 900px;">
+                    </object>
+                </p>
+                <p><strong>To share the session ID:</strong>
+                </p>
+                <ol>
+                    <li>
+                        <p>In the <strong>Manual Testing</strong> view, in the left pane, select the <strong>Web</strong> folder.</p>
+                    </li>
+                    <li>
+                        <p>Click <strong>OPEN NEW WEB SESSION</strong>.</p>
+                    </li>
+                    <li>
+                        <p>In the <strong>Open new web session</strong> form, do the following:</p>
+                        <ol>
+                            <li>
+                                <p>Select the <strong><span style="color: rgb(34,34,34);">I will use this session to debug my automation script&#160;</span></strong>checkbox.</p>
+                            </li>
+                            <li>Select your session parameters, including platform, browser, version, resolution, and location.</li>
+                            <li>Click <strong>OPEN</strong>.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>On the session tab, on the session toolbar, click the&#160;<strong>Copy session ID</strong>&#160;button <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" height="14" src="../../../perfecto/Content/Resources/Images/icon-copy-session-id.png" /></span>&#160;(this button is only available if you selected the checkbox in step 3a).</p>
+                    </li>
+                    <li>
+                        <p>In the <strong>Copy session ID</strong> form, below the session ID, click <strong>Copy to clipboard</strong>.</p>
+                        <p>
+                            <img src="../Resources/Images/session-id-web.png" class="ThumbNoBorder" />
+                            <br />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In your IDE, add the&#160;<code><strong>deviceSessionID</strong></code>&#160;capability to your script and paste the session ID as the value.</p>
+                        <div class="code panel pdl conf-macro output-block" style="border-width: 1px;">
+                            <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>deviceSessionId capability example</b>
+                            </div>
+                            <div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" xml:space="preserve">capabilities.setCapability("deviceSessionId", "48402b47-2281-4bc6-9877-f446f81a5dfc");</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Run your test. This performs all your test steps on the device in real-time.</li>
+                    <li>Access your test report. The report becomes available when you release the device.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:autonum="">Limitations</h2>When the&#160;<strong><code>deviceSessionId</code></strong>&#160;capability is used along with other capabilities, the only capability that takes effect is&#160;<code><strong>deviceSessionId</strong></code>. Other capabilities (such as install app or open app) are ignored. You can use the Perfecto <code><strong>driver.executeScript</strong></code> to code these and other actions (for more information, see <a href="https://developers.perfectomobile.com/display/PD/Execute+proprietary+functions">Execute proprietary functions</a>). For example, if you want to install an application as part of the shared session, you can use the following code:&#160;<MadCap:codeSnippet><MadCap:codeSnippetCopyButton /><MadCap:codeSnippetCaption>To install an application as part of a shared session</MadCap:codeSnippetCaption><MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve" style="mc-code-lang: Java;">//declare the Map for script parameters
+Map&lt;String, Object&gt; params =&#160;new&#160;HashMap&lt;&gt;();
+&#160;&#160;params.put("file",&#160;"PRIVATE:applications/Errands.ipa");
+params.put("instrument",&#160;"noinstrument");
+driver.executeScript("mobile:application:install", params);</MadCap:codeSnippetBody></MadCap:codeSnippet></body>
+</html>

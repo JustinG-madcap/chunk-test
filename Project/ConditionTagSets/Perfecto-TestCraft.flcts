@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="TestCraft-only"
+    Comment=""
+    OriginalName="TestCraft" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Perfecto-only"
+    Comment=""
+    OriginalName="Perfecto" />
+</CatapultConditionTagSet>

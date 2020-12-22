@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 MadCap:autonum="">Download the Reporting SDK</h1>
+        <p>This section explains how to download the Reporting SDK client&#160;for your programming language and framework.</p>
+        <p>When the download is complete, your next step is to&#160;<a href="https://developers.perfectomobile.com/display/PD/Implement+the+reporting+framework">implement the reporting framework</a>.</p>
+        <p>Click a section to view detailed steps.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Java</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Download&#160;Java<span style="font-size: 14.0px;">&#160;(l</span>icensed under the Apache License, Version 2.0):<ol><li>Go to the <a href="https://repo1.perfectomobile.com/public/repositories/maven/com/perfecto/reporting-sdk/reportium-java/" class="external-link" rel="nofollow">direct download</a>&#160;page.</li><li>Click the latest version and download the&#160;<code>reportium-java-&lt;version&gt;.jar</code>&#160;file.</li></ol></li>
+                    <li>Add the file to your classpath.</li>
+                </ol>
+                <div class="note admonition" MadCap:autonum="Note ">
+                    <p>To determine the features of the SDK version, read the <a href="https://github.com/PerfectoCode/Reporting-Samples/blob/master/README.md" class="external-link" rel="nofollow">release notes</a>.</p>
+                </div>
+                <div class="note admonition" MadCap:autonum="Note ">
+                    <p>If you use Allure annotations, you need to download and set the latest <a href="https://repo1.perfectomobile.com/public/repositories/maven/com/perfecto/reporting-sdk/reportium-allure-integration/" class="external-link" rel="nofollow">Reportium-allure integration SDK</a> instead of the latest <a href="https://repo1.perfectomobile.com/public/repositories/maven/com/perfecto/reporting-sdk/reportium-java/" class="external-link" rel="nofollow">Reportium SDK</a> version and then add that file to your classpath.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Java"><![CDATA[
+						 				  ]]></a><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Maven"><![CDATA[
+
+						  	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Maven</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Download&#160;<a href="https://maven.apache.org/what-is-maven.html" class="external-link" rel="nofollow">Maven</a>.</p>
+                    </li>
+                    <li>Create a <em>Maven</em> project in your IDE.</li>
+                    <li>
+                        <p>Update your <em><strong>pom.xml</strong></em> file.<br />Sample&#160;<em>pom.xml</em>&#160;file including reporting property and dependencies is available&#160;<a href="https://github.com/PerfectoCode/Reporting-Samples/blob/master/Java/testng-sample/pom.xml" class="external-link" rel="nofollow">here</a>.</p>
+                        <ol>
+                            <li>
+                                <p>Add the version number of the Reporting SDK that you downloaded (as described above) into the &lt;properties&gt; section as the &lt;reportium-sdk.version&gt; property.</p>
+                            </li>
+                            <li>Add the identification of the SDK repository, as defined below, into the &lt;repositories&gt; section.</li>
+                            <li>Add the Reporting SDK dependency into the &lt;dependencies&gt; section.<br />If you are using Allure annotations, add the dependency for the Allure-integration as well.</li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>Use the following skeleton if your installation uses the latest Selenium version:</p><pre class="programlisting" xml:space="preserve">&lt;properties&gt;		...
+     &lt;!-- Add the following line into the "properties" section and supply the correct version number --&gt;     &lt;reportium-sdk.version&gt;2.3.1&lt;/reportium-sdk.version&gt;		...
+&lt;/properties&gt;&lt;!-- Perfecto Repository --&gt;&lt;repository&gt;    &lt;id&gt;perfectomobile&lt;/id&gt;    &lt;name&gt;Perfecto mobile&lt;/name&gt;    &lt;url&gt;https://repo1.perfectomobile.com/public/repositories/maven&lt;/url&gt;&lt;/repository&gt;&lt;!-- Reporting SDK --&gt;&lt;dependency&gt;    &lt;groupId&gt;com.perfecto.reporting-sdk&lt;/groupId&gt;    &lt;artifactId&gt;reportium-java&lt;/artifactId&gt;    &lt;version&gt;${reportium-sdk.version}&lt;/version&gt;&lt;/dependency&gt;&lt;!-- Reporting SDK addition for Allure users --&gt;&lt;dependency&gt;    &lt;groupId&gt;com.perfecto.reporting-sdk&lt;/groupId&gt;    &lt;artifactId&gt;reportium-allure-integration&lt;/artifactId&gt;    &lt;version&gt;${reportium-sdk.version}&lt;/version&gt;&lt;/dependency&gt;</pre>
+                <p>If your installation is using a previous Selenium version, use the following skeleton (that excludes the Selenium dependency of the Smart&#160;Reporting SDK).</p><pre class="programlisting" xml:space="preserve">&lt;properties&gt;		...
+     &lt;!-- Add the following line into the "properties" section and supply the correct version number --&gt;     &lt;reportium-sdk.version&gt;2.3.1&lt;/reportium-sdk.version&gt;		...
+&lt;/properties&gt;&lt;!-- Perfecto Repository --&gt;&lt;repository&gt;    &lt;id&gt;perfectomobile&lt;/id&gt;    &lt;name&gt;Perfecto mobile&lt;/name&gt;    &lt;url&gt;https://repo1.perfectomobile.com/public/repositories/maven&lt;/url&gt;&lt;/repository&gt;&lt;!-- Reporting SDK --&gt;&lt;dependency&gt;    &lt;groupId&gt;com.perfecto.reporting-sdk&lt;/groupId&gt;    &lt;artifactId&gt;reportium-java&lt;/artifactId&gt;    &lt;version&gt;${reportium-sdk.version}&lt;/version&gt;    &lt;exclusion&gt;       &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;       &lt;artifactId&gt;selenium-api&lt;/artifactId&gt;    &lt;/exclusion&gt;&lt;/dependency&gt;&lt;!-- Reporting SDK addition for Allure users --&gt;&lt;dependency&gt;    &lt;groupId&gt;com.perfecto.reporting-sdk&lt;/groupId&gt;    &lt;artifactId&gt;reportium-allure-integration&lt;/artifactId&gt;    &lt;version&gt;${reportium-sdk.version}&lt;/version&gt;&lt;/dependency&gt;</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Ivy"><![CDATA[
+
+						  	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Ivy</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Add Perfecto’s repository to your ivysettings.xml:</p><pre class="programlisting" xml:space="preserve">&lt;ivysettings&gt;    &lt;settings defaultResolver="perfecto"/&gt;    &lt;property name="perfecto-public"              value="https://repo1.perfectomobile.com/public/repositories/maven"/&gt;    &lt;resolvers&gt;        &lt;ibiblio name="perfecto" m2compatible="true" root="${perfecto-public}"/&gt;    &lt;/resolvers&gt;&lt;/ivysettings&gt;</pre>
+                <p>Add Perfecto jars to ivy.xml:</p><pre class="programlisting" xml:space="preserve">&lt;!-- Reportium SDK --&gt;&lt;dependency org="com.perfecto.reporting-sdk" name="reportium-java" rev="${reportium-sdk.version}"/&gt;&lt;!-- Reportium SDK addition for Allure users --&gt;&lt;dependency org="com.perfecto.reporting-sdk" name="reportium-allure-integration" rev="${reportium-sdk.version}"/&gt;</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Gradle"><![CDATA[
+
+						  	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Gradle</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Update your <code>build.gradle</code> file with:</p>
+                <ul>
+                    <li>Perfecto’s SDK download repository&#160; URL</li>
+                    <li>Define the SDK version in the reportium-sdk.version (supply the version number of the SDK that you have available).</li>
+                    <li>Add the dependencies on creating the Reporting SDK jar.</li>
+                </ul><pre class="syntaxhighlighter-pre" xml:space="preserve">// Perfecto's artifact repository
+repositories {
+    maven {
+        url 'https://repo1.perfectomobile.com/public/repositories/maven'
+    }
+}
+
+// definition of the Reporting-SDK version
+def reportium-sdk.version = 2.3.1		// supply correct version number
+
+dependencies {
+   // Reportium SDK
+    compile "com.perfecto.reporting-sdk:reportium-java:$reportium-sdk.version"    // Reportium SDK addition for Allure users
+    compile "com.perfecto.reporting-sdk:reportium-allure-integration:$reportium-sdk.version"}</pre>
+                <p xml:space="preserve">
+                    <object src="https://youtu.be/Jlb8DKr26hE">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-JavaScript"><![CDATA[
+
+						  	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>JavaScript
+</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For <em><strong>NodeJS</strong> </em>installation use:</p><pre class="programlisting" xml:space="preserve">npm install --save-dev perfecto-reporting</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-C"><![CDATA[
+
+	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+						  C#</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Download the Reporting C# client, available as a NuGet package from&#160;<a href="https://www.nuget.org/packages/Perfecto-Reporting/" class="external-link" rel="nofollow">here</a>.</p>
+                <p>Run the following command in the&#160;<a href="https://docs.nuget.org/docs/start-here/using-the-package-manager-console" class="external-link" rel="nofollow">Package Manager Console</a>:</p><pre class="programlisting" xml:space="preserve">Install-Package Perfecto-Reporting</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Ruby"><![CDATA[
+
+						  
+	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Ruby</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For <em><strong>Gem</strong> </em>installation use:</p><pre class="syntaxhighlighter-pre" xml:space="preserve">gem install perfecto-reporting</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-Python"><![CDATA[
+
+						  
+	  				  ]]></a>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Python</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><span>For <em><strong>pip</strong> </em>installation use:</span>
+                </p><pre class="syntaxhighlighter-pre" xml:space="preserve">pip install perfecto</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

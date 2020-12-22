@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div class="note admonition" MadCap:autonum="Note ">
+            <p class="Paragraph SCXW115145434 BCX0">
+                <span class="TextRun SCXW115145434 BCX0">When working with first beta versions of major OS versions, especially developer betas that are not available as public betas, any testing done on the device may be affected by instabilities and bugs on the OS level. If you are interested in testing the new beta, contact Support or your Customer Success Manager. We recommend limiting beta testing to 1-2 devices.</span>
+            </p>
+        </div>
+    </body>
+</html>

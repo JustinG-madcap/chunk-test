@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>This manual introduces
+      <MadCap:variable name="Perforce.Helix short" />, a
+      version control system that is secure, scalable, and       supports parallel development and high availability. Topics include version control, centralized versus distributed development, client applications, use cases, a list resources to help you succeed, and a glossary to terms.</p>
+    </body>
+</html>

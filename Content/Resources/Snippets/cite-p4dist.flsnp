@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>
+            <a href="http://www.perforce.com/perforce/doc.current/manuals/p4sag/index.html" target="_blank">
+                <i>
+                    <MadCap:variable name="Perforce.gd-p4sag" />
+                </i>
+            </a>
+        </p>
+    </body>
+</html>

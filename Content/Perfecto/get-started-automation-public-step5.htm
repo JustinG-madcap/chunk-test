@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 MadCap:autonum="">5 | Upload your app</h1>
+        <div class="note admonition" MadCap:autonum="Note ">
+            <p>This <span class="inline-comment-marker">step is only relevant <span style="color: rgb(23,43,77);">for native/hybrid app testing</span></span>.</p>
+        </div>
+        <p><span style="letter-spacing: 0.0px;">Installing an application onto a Perfecto cloud device from within your automation script requires that the application file (<strong><code>.apk</code></strong> or <strong><code>.ipa</code></strong>) be uploaded to the Perfecto repository, either through your Appium/Selenium automation script or through the Perfecto UI or REST API.&#160;<span style="color: rgb(23,43,77);">The Perfecto Repository is the storage where you keep and manage all your digital assets, such as Android and iOS apps, images, audio files, scripts, or any other files you may need for testing purposes.</span></span>
+        </p>
+        <p class="auto-cursor-target">How do you want to upload your app?<br /></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-ThroughthePerfectoUI">
+						  Through the Perfecto UI
+	  				  </a>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Perfecto UI, from the top menu, select <strong>Assets and Management</strong>.</li>
+                    <li>In the <strong>Repository management</strong> view, at the bottom right, click the upload icon <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="16" src="https://developers.perfectomobile.com/download/thumbnails/61775462/icon-repository-upload.png?version=1&amp;modificationDate=1605110816220&amp;api=v2" /></span><span style="letter-spacing: 0.0px;">.</span></li>
+                    <li>Browse to the file you want to upload, select it, and click <strong>Open</strong>.</li>
+                    <li>In the <strong>Upload file</strong> form, specify the following:<br /><ul><li>The <strong>file name</strong>: By default, this is the existing name of the file, but you can change it as needed.</li><li>The <strong>folder</strong>: This is the virtual folder. It specifies who has view access. Do you want to keep the file private, make it public, or restrict access to your group?</li><li>The <strong>locator</strong>: This is the virtual path that you will use in your automation code. By default, it consists of the virtual folder name and the file name (for example: <code>My group: sample-app.apk</code>), but you can insert additional levels between the virtual folder and the file name. <br /><strong>To edit the locator:</strong>&#160;Click the pencil icon <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="16" src="https://developers.perfectomobile.com/download/thumbnails/61775462/icon-pencil.png?version=1&amp;modificationDate=1605110816269&amp;api=v2" /></span>, enter the additional level or levels, and then click the disk icon&#160;<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="16" src="https://developers.perfectomobile.com/download/thumbnails/61775462/icon-disk.png?version=1&amp;modificationDate=1605110816333&amp;api=v2" /></span> to save your change.</li></ul></li>
+                    <li>Click <strong>UPLOAD</strong> to complete the process.</li>
+                    <li>Go back to your script and specify the app file locator, as follows:<br /><span style="color: rgb(255,0,0);"><span class="inline-comment-marker">&lt;include example&gt;</span></span></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a class="rwui_expandable_item_title rwui_expand" onclick="RWUI.toggleExpandItem(this, event);" id="rwui_expand-ThroughyourAppiumSeleniumautomationscript">
+						  Through your Appium/Selenium automation script
+	  				  </a>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li class="auto-cursor-target">
+                        <p class="auto-cursor-target"><span style="letter-spacing: 0.0px;">To upload your app from within an App<span class="inline-comment-marker">ium/Selenium automation script, use the </span></span><code><strong><span class="inline-comment-marker">uploadMedia()</span></strong></code><span style="letter-spacing: 0.0px;"><span class="inline-comment-marker"> method of the </span></span><code><strong style="letter-spacing: 0.0px;"><span class="inline-comment-marker">PerfectoLabUtils</span></strong></code><span style="letter-spacing: 0.0px;"><span class="inline-comment-marker"> class </span></span><span style="letter-spacing: 0.0px;"><span class="inline-comment-marker">pr</span>ior to creating the <strong><code>AppiumDriver</code></strong> instance, as shown in this Java sample:<br /></span>
+                        </p>
+                        <div class="code panel pdl conf-macro output-block" style="border-width: 1px;">
+                            <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Uploading Media to Repository</b>
+                            </div>
+                            <div class="codeContent panelContent pdl"><pre class="syntaxhighlighter-pre" xml:space="preserve">PerfectoLabUtils.uploadMedia("mobilecloud.perfectomobile.com", "pasteLongSecurityTokenHere!", "emptyText.txt", "PRIVATE:emptyText.txt");</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="auto-cursor-target">S<span class="inline-comment-marker">pecify the app fil</span>e locator, as follows:<br /><span style="color: rgb(255,0,0);">&lt;i<span class="inline-comment-marker">nclude example&gt;</span></span></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:autonum="">What's next</h2>
+        <p>Continue with <MadCap:xref href="get-started-automation-public-step6.htm">6 | Finalize and run your script</MadCap:xref>.</p>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/InformalTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 MadCap:conditions="Perforce.SNIPPET-show-or-hide-section" MadCap:autonum="">Syntax conventions</h2>
+        <p>
+      Helix documentation uses the following syntax conventions to describe
+      command line syntax.
+    </p>
+        <table style="mc-table-style: url('../TableStyles/InformalTable.css');" class="TableStyle-InformalTable" cellspacing="0">
+            <col class="TableStyle-InformalTable-Column-Regular" />
+            <col class="TableStyle-InformalTable-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-InformalTable-Head-Header1">
+                    <th class="TableStyle-InformalTable-HeadE-Regular-Header1">Notation</th>
+                    <th class="TableStyle-InformalTable-HeadD-Regular-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <code>literal</code>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+          Must be used in
+          the command exactly as shown.
+        </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <i>italics</i>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+          A parameter for which you must supply specific
+          information. For example, for a <i>serverid</i> parameter, supply the ID of the server.  
+        </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <code>-a -b</code>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">Both <i>a</i> or
+          <i>b</i> are required. </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <p>
+                            <code>{-a | -b}</code>
+                        </p>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+                        <p>
+       Either <i>a</i> or
+          <i>b</i> is required. Omit the curly braces when you compose the command.   
+        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <code>[-a -b]</code>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+            Any combination of the enclosed elements is optional. None is also optional. Omit the brackets when you compose the command. </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyE-Regular-NoBackground">
+                        <code>[-a | -b]</code>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyD-Regular-NoBackground">
+            Any one of the enclosed elements is
+            optional. None is also optional. Omit the brackets when you compose the command. </td>
+                </tr>
+                <tr class="TableStyle-InformalTable-Body-NoBackground">
+                    <td class="TableStyle-InformalTable-BodyB-Regular-NoBackground">
+                        <span class="code">...</span>
+                    </td>
+                    <td class="TableStyle-InformalTable-BodyA-Regular-NoBackground">
+                        <p>Previous argument can be repeated.</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="code">p4 [g-opts] streamlog [ -l -L -t -m max ] <i>stream1</i> ...<br /></span>means <span class="code">1</span> or more stream arguments separated by a space</p>
+                            </li>
+                            <li>See also the use on <span class="code">...</span> in  <a href="https://www.perforce.com/manuals/cmdref/Content/CmdRef/introduction.syntax.alias.html" target="_blank">Command alias syntax</a> in the <MadCap:snippetText src="cite-cmdref.flsnp" /><br /></li>
+                        </ul>
+                        <div class="tip admonition" MadCap:autonum="Tip ">
+                            <p>
+                                <span class="code">...</span> has a different meaning for directories. See  <a href="https://www.perforce.com/manuals/cmdref/Content/CmdRef/filespecs.html#Wildcards" target="_blank">Wildcards</a> in the <MadCap:snippetText src="cite-cmdref.flsnp" />.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:autonum="">Feedback</h2>
+        <p>How can we improve this manual? Email us at
+      <MadCap:snippetText src="email-manual.flsnp" />.
+    </p>
+        <h2 MadCap:autonum="">Other  documentation</h2>
+        <p>See <a href="https://www.perforce.com/support/self-service-resources/documentation" target="_blank">https://www.perforce.com/support/self-service-resources/documentation</a>.</p>
+        <div class="tip admonition" MadCap:autonum="Tip ">
+            <p>You can also search for Support articles in the <a href="https://community.perforce.com/s/" target="_blank">Perforce Knowledgebase</a>.</p>
+        </div>
+    </body>
+</html>
